@@ -32,8 +32,8 @@ private final ClienteDtoMapper dtoMapper;
     @PostMapping
     public ResponseEntity<ClienteDTO> crear(@RequestBody ClienteDTO clienteDTO) {
         ClienteCreateCommand command = dtoMapper.toCommand(clienteDTO);
-        Cliente clienteCreado = createHandler.crear(command); // ← Devuelve Cliente (entidad de dominio)
-        ClienteDTO respuesta = dtoMapper.domainToDto(clienteCreado); // ← DTO limpio
+        Cliente clienteCreado = createHandler.crear(command);
+        ClienteDTO respuesta = dtoMapper.domainToDto(clienteCreado); 
 
         return ResponseEntity.status(HttpStatus.CREATED).body(respuesta);}
 }
