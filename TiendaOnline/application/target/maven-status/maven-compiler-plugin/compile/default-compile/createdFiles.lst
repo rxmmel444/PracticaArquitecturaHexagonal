@@ -1,0 +1,7 @@
+mx\com\tiendaonline\cliente\mapper\ClienteDtoMapperImpl.class
+mx\com\tiendaonline\cliente\query\ClienteAllHandler.class
+mx\com\tiendaonline\cliente\dto\ClienteDTO.class
+mx\com\tiendaonline\cliente\mapper\ClienteDtoMapper.class
+mx\com\tiendaonline\cliente\command\ClienteCreateCommand.class
+mx\com\tiendaonline\cliente\command\ClienteCreateHandler.class
+mx\com\tiendaonline\cliente\service\ClienteCreateService.class

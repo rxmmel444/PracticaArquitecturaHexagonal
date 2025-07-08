@@ -1,0 +1,7 @@
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\cliente\adapter\entity\ClienteEntity.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\cliente\adapter\jpa\ClienteJpaAdapterRepository.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\cliente\adapter\jpa\dao\ClienteDAO.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\cliente\adapter\jpa\repository\ClienteRespositoryImpl.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\cliente\adapter\mapper\ClienteDboMapper.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\cliente\rest\controller\ClienteCommandController.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\cliente\rest\controller\ClienteQueryController.java

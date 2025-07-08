@@ -1,0 +1,9 @@
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\Cliente.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteApellido.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteDireccion.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteEmail.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteId.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteNombre.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteTelefono.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\dao\ClienteDAO.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\repository\ClienteRepository.java

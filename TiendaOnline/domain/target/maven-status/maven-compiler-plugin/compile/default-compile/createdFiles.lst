@@ -1,0 +1,9 @@
+mx\com\tiendaonline\cliente\model\entity\ClienteApellido.class
+mx\com\tiendaonline\cliente\model\entity\ClienteId.class
+mx\com\tiendaonline\cliente\port\repository\ClienteRepository.class
+mx\com\tiendaonline\cliente\model\entity\ClienteEmail.class
+mx\com\tiendaonline\cliente\model\entity\Cliente.class
+mx\com\tiendaonline\cliente\model\entity\ClienteNombre.class
+mx\com\tiendaonline\cliente\port\dao\ClienteDAO.class
+mx\com\tiendaonline\cliente\model\entity\ClienteDireccion.class
+mx\com\tiendaonline\cliente\model\entity\ClienteTelefono.class

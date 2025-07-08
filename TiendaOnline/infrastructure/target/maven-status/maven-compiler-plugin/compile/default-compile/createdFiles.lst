@@ -1,0 +1,7 @@
+mx\com\tiendaonline\cliente\adapter\jpa\dao\ClienteDAO.class
+mx\com\tiendaonline\cliente\adapter\mapper\ClienteDboMapper.class
+mx\com\tiendaonline\cliente\rest\controller\ClienteCommandController.class
+mx\com\tiendaonline\cliente\rest\controller\ClienteQueryController.class
+mx\com\tiendaonline\cliente\adapter\jpa\repository\ClienteRespositoryImpl.class
+mx\com\tiendaonline\cliente\adapter\entity\ClienteEntity.class
+mx\com\tiendaonline\cliente\adapter\jpa\ClienteJpaAdapterRepository.class
