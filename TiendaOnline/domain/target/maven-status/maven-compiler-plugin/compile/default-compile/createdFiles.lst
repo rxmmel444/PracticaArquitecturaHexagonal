@@ -1,6 +1,8 @@
 mx\com\tiendaonline\cliente\model\entity\ClienteId.class
 mx\com\tiendaonline\producto\model\entity\ProductoNombre.class
 mx\com\tiendaonline\producto\model\entity\ProductoPrecio.class
+mx\com\tiendaonline\message\model\dto\command\ClienteMessageCrateCommand.class
+mx\com\tiendaonline\cliente\port\event\ClienteEventCreate.class
 mx\com\tiendaonline\cliente\model\entity\Cliente.class
 mx\com\tiendaonline\cliente\port\dao\ClienteDAO.class
 mx\com\tiendaonline\cliente\model\entity\ClienteDireccion.class
@@ -9,8 +11,10 @@ mx\com\tiendaonline\cliente\port\repository\ClienteRepository.class
 mx\com\tiendaonline\cliente\model\entity\ClienteEmail.class
 mx\com\tiendaonline\producto\model\entity\ProductoStock.class
 mx\com\tiendaonline\producto\port\dao\ProductoDAO.class
+mx\com\tiendaonline\message\service\ClienteMessageService.class
 mx\com\tiendaonline\cliente\model\entity\ClienteNombre.class
 mx\com\tiendaonline\producto\model\entity\ProductoId.class
 mx\com\tiendaonline\producto\port\repository\ProductoRepository.class
 mx\com\tiendaonline\cliente\model\entity\ClienteTelefono.class
 mx\com\tiendaonline\producto\model\entity\Producto.class
+mx\com\tiendaonline\message\port\repository\ClienteEventRepository.class

@@ -6,6 +6,7 @@ import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Repository
 public class ClienteDAO  implements mx.com.tiendaonline.cliente.port.dao.ClienteDAO {
@@ -21,11 +22,15 @@ public class ClienteDAO  implements mx.com.tiendaonline.cliente.port.dao.Cliente
 
     @Override
     public List<Cliente> getAllClientes() {
-        return List.of();
+        return adapterRepository.findAll()
+                .stream()
+                .map(clienteDboMapper::toDomain)
+                .collect(Collectors.toList());
     }
 
     @Override
     public Cliente getById(Long id) {
-        return null;
+        var optionalUser = adapterRepository.findById(id);
+        return clienteDboMapper.toDomain(optionalUser.get());
     }
 }

@@ -1,11 +1,13 @@
 package mx.com.tiendaonline.cliente.rest.controller;
 
 
+import mx.com.tiendaonline.cliente.command.ClienteCreateCommand;
 import mx.com.tiendaonline.cliente.command.ClienteCreateHandler;
 import mx.com.tiendaonline.cliente.dto.ClienteDTO;
 import mx.com.tiendaonline.cliente.mapper.ClienteDtoMapper;
 
-import mx.com.tiendaonline.message.adapter.kafka.repository.KafkaProducerAdapter;
+import mx.com.tiendaonline.cliente.adapter.kafka.KafkaProducerAdapter;
+import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -27,11 +29,11 @@ private final ClienteDtoMapper dtoMapper;
         this.dtoMapper = dtoMapper;
     }
 
-    @PostMapping()
-    public ResponseEntity<ClienteDTO> crear(@RequestBody ClienteDTO clienteDTO){
-        ClienteDTO cliente = createHandler.crear(clienteDTO);
-        producerAdapter.clienteCreado(clienteDTO);
-        return ResponseEntity.status(HttpStatus.CREATED).body(cliente);
+    @PostMapping
+    public ResponseEntity<ClienteDTO> crear(@RequestBody ClienteDTO clienteDTO) {
+        ClienteCreateCommand command = dtoMapper.toCommand(clienteDTO);
+        Cliente clienteCreado = createHandler.crear(command); // ← Devuelve Cliente (entidad de dominio)
+        ClienteDTO respuesta = dtoMapper.domainToDto(clienteCreado); // ← DTO limpio
 
-    }
+        return ResponseEntity.status(HttpStatus.CREATED).body(respuesta);}
 }

@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import mx.com.tiendaonline.compraproducto.adapter.entity.CompraEntity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,11 +30,11 @@ public class ClienteEntity {
     private String telefono;
     @Column(unique = true)
     private String direccion;
-/*
+
     @OneToMany(mappedBy = "cliente" ,cascade = CascadeType.ALL,
             orphanRemoval = true)
     private List<CompraEntity> compras = new ArrayList<>();
-*/
+
     public ClienteEntity(String nombre, String apellido, String email, String telefono, String direccion) {
         this.nombre = nombre;
         this.apellido = apellido;

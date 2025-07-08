@@ -7,6 +7,7 @@ mx\com\tiendaonline\cliente\command\ClienteCreateCommand.class
 mx\com\tiendaonline\cliente\command\ClienteCreateHandler.class
 mx\com\tiendaonline\cliente\service\ClienteCreateService.class
 mx\com\tiendaonline\producto\query\ProductoAllHandler.class
+mx\com\tiendaonline\message\command\ClienteMessageCreateHandler.class
 mx\com\tiendaonline\producto\command\ProductoCreateCommand.class
 mx\com\tiendaonline\cliente\mapper\ClienteDtoMapperImpl.class
 mx\com\tiendaonline\cliente\query\ClienteAllHandler.class

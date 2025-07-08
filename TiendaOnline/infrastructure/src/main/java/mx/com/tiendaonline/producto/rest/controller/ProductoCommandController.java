@@ -1,17 +1,9 @@
 package mx.com.tiendaonline.producto.rest.controller;
 
 
-import mx.com.tiendaonline.cliente.command.ClienteCreateHandler;
-import mx.com.tiendaonline.cliente.dto.ClienteDTO;
-import mx.com.tiendaonline.cliente.mapper.ClienteDtoMapper;
-
-import mx.com.tiendaonline.message.adapter.kafka.repository.KafkaProducerAdapter;
+import mx.com.tiendaonline.cliente.adapter.kafka.KafkaProducerAdapter;
 import mx.com.tiendaonline.producto.command.ProductoCreateHandler;
 import mx.com.tiendaonline.producto.mapper.ProductoDtoMapper;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -38,7 +38,7 @@ public class ClienteDboMapper {
             return null;
 
         ClienteEntity entity = toEntity(domain);
-        entity.setId(entity.getId());
+        entity.setId(domain.getId());
         return entity;
     }
 }

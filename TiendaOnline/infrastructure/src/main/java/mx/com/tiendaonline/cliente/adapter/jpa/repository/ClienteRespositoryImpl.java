@@ -25,12 +25,16 @@ public class ClienteRespositoryImpl implements ClienteRepository {
     }
 
     @Override
-    public Cliente update(Long id, Cliente cliente) {
-        return null;
+    public Cliente update(Cliente cliente) {
+        var clienteActualizar = clienteDboMapper.toEntity(cliente);
+        var actualizado = adapterRepository.save(clienteActualizar);
+        return clienteDboMapper.toDomain(actualizado);
     }
+
 
     @Override
     public void delete(Long id) {
 
+        adapterRepository.deleteById(id);
     }
 }

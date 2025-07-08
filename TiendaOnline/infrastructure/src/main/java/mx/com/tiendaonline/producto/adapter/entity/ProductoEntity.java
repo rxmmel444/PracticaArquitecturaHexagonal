@@ -6,11 +6,15 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import mx.com.tiendaonline.compraproducto.adapter.entity.CompraEntity;
+import mx.com.tiendaonline.compraproducto.adapter.entity.CompraProductoEntity;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name = "clientes")
+@Table(name = "productos")
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
@@ -19,16 +23,17 @@ public class ProductoEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
-    @NotBlank(message = "el nombre es obligatorio")
+
     private String nombre;
     private BigDecimal precio;
-    @Email(message = "el formato es incorrecto")
+
     private Integer stock;
 
-/*
-    @OneToMany(mappedBy = "cliente" ,cascade = CascadeType.ALL,
-            orphanRemoval = true)
-    private List<CompraEntity> compras = new ArrayList<>();
-*/
 
+    @OneToMany(mappedBy = "producto", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<CompraProductoEntity> compras = new ArrayList<>();
+
+
+    public ProductoEntity(Long id, String nombre, BigDecimal precio, Integer stock) {
+    }
 }
