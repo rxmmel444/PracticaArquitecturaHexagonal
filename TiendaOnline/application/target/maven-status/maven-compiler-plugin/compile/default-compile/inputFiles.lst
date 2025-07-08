@@ -4,3 +4,9 @@ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\appl
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\mapper\ClienteDtoMapper.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\query\ClienteAllHandler.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\service\ClienteCreateService.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\producto\command\ProductoCreateCommand.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\producto\command\ProductoCreateHandler.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\producto\dto\ProductoDTO.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\producto\mapper\ProductoDtoMapper.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\producto\query\ProductoAllHandler.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\producto\service\ProductoCreateService.java

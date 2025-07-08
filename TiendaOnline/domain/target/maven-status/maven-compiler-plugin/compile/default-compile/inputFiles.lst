@@ -7,3 +7,10 @@ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\doma
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteTelefono.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\dao\ClienteDAO.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\repository\ClienteRepository.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\producto\model\entity\Producto.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\producto\model\entity\ProductoId.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\producto\model\entity\ProductoNombre.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\producto\model\entity\ProductoPrecio.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\producto\model\entity\ProductoStock.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\producto\port\dao\ProductoDAO.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\producto\port\repository\ProductoRepository.java

@@ -5,3 +5,13 @@ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infr
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\cliente\adapter\mapper\ClienteDboMapper.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\cliente\rest\controller\ClienteCommandController.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\cliente\rest\controller\ClienteQueryController.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\message\adapter\kafka\repository\KafkaConsumerAdapter.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\message\adapter\kafka\repository\KafkaProducerAdapter.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\message\adapter\kafka\rest\controller\MessageCommandController.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto\adapter\entity\ProductoEntity.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto\adapter\jpa\dao\ProductoDAO.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto\adapter\jpa\ProductoJpaAdapterRepository.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto\adapter\jpa\repository\ProductoRespositoryImpl.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto\adapter\mapper\ProductoDboMapper.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto\rest\controller\ProductoCommandController.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto\rest\controller\ProductoQueryController.java

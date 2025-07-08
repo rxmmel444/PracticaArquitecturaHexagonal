@@ -14,15 +14,14 @@ import org.springframework.stereotype.Component;
 public class ProductoCreateService {
 
     private final ProductoRepository crepository;
-    private final ProductoDtoMapper clienteDtoMapper;
 
 
 
     public Producto crear(ProductoCreateCommand createCommand) {
        var producto = new Producto(
                createCommand.getId(),
-               createCommand.getPrecio(),
                createCommand.getNombre(),
+               createCommand.getPrecio(),
                createCommand.getStock()
 
               );

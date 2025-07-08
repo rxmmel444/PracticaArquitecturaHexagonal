@@ -10,17 +10,33 @@ public class Producto {
     private ProductoId id;
     private ProductoNombre nombre;
     private ProductoPrecio precio;
-    private ProductoStock productoStock;
+    private ProductoStock stock;
 
-    public Producto(Long id, BigDecimal precio, String nombre, Integer productoStock) {
+    public Producto(Long id, String nombre, BigDecimal precio, Integer stock) {
         this.id = new ProductoId(id);
-        this.precio = new ProductoPrecio(precio);
         this.nombre = new ProductoNombre(nombre);
-        this.productoStock = new ProductoStock(productoStock);
+        this.precio = new ProductoPrecio(precio);
+        this.stock = new ProductoStock(stock);
 
     }
 
-/*
+    public Long getId() {
+        return this.id.getId();
+    }
+
+    public String getNombre() {
+        return this.nombre.getNombre();
+    }
+
+    public BigDecimal getPrecio() {
+        return this.precio.getPrecio();
+    }
+
+    public Integer getStock() {
+        return this.stock.getStock();
+    }
+
+    /*
     public Cliente(Long id, String nombre, String apellido, String email, String telefono, String direccion) {
         this.id = new ClienteId(id);
         this.nombre = new ClienteNombre(nombre);
@@ -42,21 +58,7 @@ public class Producto {
     }
 */
 
-    public ProductoId getId() {
-        return id;
-    }
 
-    public ProductoNombre getNombre() {
-        return nombre;
-    }
-
-    public ProductoStock getProductoStock() {
-        return productoStock;
-    }
-
-    public ProductoPrecio getPrecio() {
-        return precio;
-    }
 /*
     public List<ComprasProducto> getClienteCompra() {
         return this.clienteCompra.getProductos();

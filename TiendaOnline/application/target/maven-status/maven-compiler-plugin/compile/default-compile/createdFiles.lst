@@ -1,7 +1,14 @@
-mx\com\tiendaonline\cliente\mapper\ClienteDtoMapperImpl.class
-mx\com\tiendaonline\cliente\query\ClienteAllHandler.class
+mx\com\tiendaonline\producto\mapper\ProductoDtoMapperImpl.class
+mx\com\tiendaonline\producto\service\ProductoCreateService.class
+mx\com\tiendaonline\producto\command\ProductoCreateHandler.class
 mx\com\tiendaonline\cliente\dto\ClienteDTO.class
 mx\com\tiendaonline\cliente\mapper\ClienteDtoMapper.class
 mx\com\tiendaonline\cliente\command\ClienteCreateCommand.class
 mx\com\tiendaonline\cliente\command\ClienteCreateHandler.class
 mx\com\tiendaonline\cliente\service\ClienteCreateService.class
+mx\com\tiendaonline\producto\query\ProductoAllHandler.class
+mx\com\tiendaonline\producto\command\ProductoCreateCommand.class
+mx\com\tiendaonline\cliente\mapper\ClienteDtoMapperImpl.class
+mx\com\tiendaonline\cliente\query\ClienteAllHandler.class
+mx\com\tiendaonline\producto\mapper\ProductoDtoMapper.class
+mx\com\tiendaonline\producto\dto\ProductoDTO.class
