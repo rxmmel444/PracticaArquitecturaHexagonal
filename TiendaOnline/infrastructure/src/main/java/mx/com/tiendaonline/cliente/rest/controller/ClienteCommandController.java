@@ -33,7 +33,7 @@ private final ClienteDtoMapper dtoMapper;
     public ResponseEntity<ClienteDTO> crear(@RequestBody ClienteDTO clienteDTO) {
         ClienteCreateCommand command = dtoMapper.toCommand(clienteDTO);
         Cliente clienteCreado = createHandler.crear(command);
-        ClienteDTO respuesta = dtoMapper.domainToDto(clienteCreado); 
+        ClienteDTO respuesta = dtoMapper.domainToDto(clienteCreado);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(respuesta);}
 }
