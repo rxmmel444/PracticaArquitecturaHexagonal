@@ -6,12 +6,14 @@ import mx.com.tiendaonline.cliente.port.dao.ClienteDAO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 public class ClienteAllService {
     private final ClienteDAO clienteDAO;
     public List<Cliente> ejecutar(){
-        return clienteDAO.getAllClientes();
+
+      return clienteDAO.getAllClientes();
     }
 }

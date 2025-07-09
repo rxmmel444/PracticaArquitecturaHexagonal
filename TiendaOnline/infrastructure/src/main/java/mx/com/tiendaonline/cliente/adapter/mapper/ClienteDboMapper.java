@@ -12,6 +12,7 @@ public class ClienteDboMapper {
             return null;
         }
         return new ClienteEntity(
+                domain.getId(),
                 domain.getNombre(),
                 domain.getApellido(),
                 domain.getEmail(),

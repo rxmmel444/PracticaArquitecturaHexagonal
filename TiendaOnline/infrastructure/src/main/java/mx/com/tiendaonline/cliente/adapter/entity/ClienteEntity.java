@@ -35,7 +35,8 @@ public class ClienteEntity {
             orphanRemoval = true)
     private List<CompraEntity> compras = new ArrayList<>();
 
-    public ClienteEntity(String nombre, String apellido, String email, String telefono, String direccion) {
+    public ClienteEntity(Long id,String nombre, String apellido, String email, String telefono, String direccion) {
+       this.id= id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.email = email;

@@ -31,14 +31,21 @@ private final ClienteDeleteHandler deleteHandler;
         this.deleteHandler = deleteHandler;
     }
 
-
+/*
     @PostMapping
     public ResponseEntity<ClienteDTO> crear(@RequestBody ClienteDTO clienteDTO) {
         ClienteCreateCommand command = dtoMapper.toCommand(clienteDTO);
         Cliente clienteCreado = createHandler.crear(command);
         ClienteDTO respuesta = dtoMapper.domainToDto(clienteCreado);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(respuesta);}
+        return ResponseEntity.status(HttpStatus.CREATED).body(respuesta);
+    }*/
+
+    @PostMapping
+    public ClienteDTO crear(@RequestBody ClienteCreateCommand command) {
+
+            return createHandler.crear(command);
+    }
 
     @PutMapping("/{id}")
     public ClienteDTO clientedUpdate(@RequestBody ClienteUpdateCommand cliente,

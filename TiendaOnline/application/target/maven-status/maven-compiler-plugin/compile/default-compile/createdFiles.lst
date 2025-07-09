@@ -1,3 +1,4 @@
+mx\com\tiendaonline\cliente\command\ClienteUpdateCommand.class
 mx\com\tiendaonline\compraproducto\query\CompraAllHander.class
 mx\com\tiendaonline\producto\service\ProductoCreateService.class
 mx\com\tiendaonline\cliente\query\ClienteByIdHandler.class

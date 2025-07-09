@@ -25,8 +25,8 @@ public class ClienteRespositoryImpl implements ClienteRepository {
     }
 
     @Override
-    public Cliente update(Cliente cliente) {
-        ClienteEntity entity = clienteDboMapper.toEntityWithId(cliente);
+    public Cliente update(Long id,Cliente cliente) {
+        ClienteEntity entity = clienteDboMapper.toEntity(cliente);
         ClienteEntity updated = adapterRepository.save(entity);
         return clienteDboMapper.toDomain(updated);
     }

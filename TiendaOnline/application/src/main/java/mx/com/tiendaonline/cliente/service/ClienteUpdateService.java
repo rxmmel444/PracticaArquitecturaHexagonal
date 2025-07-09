@@ -29,7 +29,7 @@ public class ClienteUpdateService {
                 command.getDireccion());
 
 
-return repository.update(clienteUpdate);
+return repository.update(id,clienteUpdate);
 
     }
 }

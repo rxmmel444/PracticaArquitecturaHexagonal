@@ -1,6 +1,7 @@
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\command\ClienteCreateCommand.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\command\ClienteCreateHandler.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\command\ClienteDeleteHandler.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\command\ClienteUpdateCommand.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\command\ClienteUpdateHandler.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\dto\ClienteDTO.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\mapper\ClienteDtoMapper.java

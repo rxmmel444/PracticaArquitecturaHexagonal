@@ -1,7 +1,7 @@
 package mx.com.tiendaonline.cliente.rest.controller;
 
 import mx.com.tiendaonline.cliente.dto.ClienteDTO;
-import mx.com.tiendaonline.cliente.query.ClienteAllHandler;
+import mx.com.tiendaonline.cliente.query.ClienteAllHandlerQuery;
 import mx.com.tiendaonline.cliente.query.ClienteByIdHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,9 +15,9 @@ import java.util.List;
 public class ClienteQueryController {
 
     private final ClienteByIdHandler byId;
-    private final ClienteAllHandler getAll;
+    private final ClienteAllHandlerQuery getAll;
 
-    public ClienteQueryController(ClienteByIdHandler byId, ClienteAllHandler getAll) {
+    public ClienteQueryController(ClienteByIdHandler byId, ClienteAllHandlerQuery getAll) {
         this.byId = byId;
         this.getAll = getAll;
     }
