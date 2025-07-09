@@ -5,6 +5,7 @@ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\doma
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteId.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteNombre.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteTelefono.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\CompraProducto.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\dao\ClienteDAO.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\event\ClienteEventCreate.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\repository\ClienteRepository.java

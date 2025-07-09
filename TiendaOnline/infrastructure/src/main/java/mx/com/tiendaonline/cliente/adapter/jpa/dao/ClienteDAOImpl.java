@@ -1,20 +1,20 @@
 package mx.com.tiendaonline.cliente.adapter.jpa.dao;
-
 import mx.com.tiendaonline.cliente.adapter.jpa.ClienteJpaAdapterRepository;
 import mx.com.tiendaonline.cliente.adapter.mapper.ClienteDboMapper;
 import mx.com.tiendaonline.cliente.model.entity.Cliente;
+import mx.com.tiendaonline.cliente.port.dao.ClienteDAO;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Repository
-public class ClienteDAO  implements mx.com.tiendaonline.cliente.port.dao.ClienteDAO {
+public class ClienteDAOImpl implements ClienteDAO {
 
    private final ClienteJpaAdapterRepository adapterRepository;
    private final ClienteDboMapper clienteDboMapper;
 
-    public ClienteDAO(ClienteJpaAdapterRepository adapterRepository, ClienteDboMapper clienteDboMapper) {
+    public ClienteDAOImpl(ClienteJpaAdapterRepository adapterRepository, ClienteDboMapper clienteDboMapper) {
         this.adapterRepository = adapterRepository;
         this.clienteDboMapper = clienteDboMapper;
     }

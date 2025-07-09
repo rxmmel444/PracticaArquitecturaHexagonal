@@ -3,6 +3,7 @@ mx\com\tiendaonline\producto\model\entity\ProductoNombre.class
 mx\com\tiendaonline\producto\model\entity\ProductoPrecio.class
 mx\com\tiendaonline\message\model\dto\command\ClienteMessageCrateCommand.class
 mx\com\tiendaonline\cliente\port\event\ClienteEventCreate.class
+mx\com\tiendaonline\cliente\model\entity\CompraProducto.class
 mx\com\tiendaonline\cliente\model\entity\Cliente.class
 mx\com\tiendaonline\cliente\port\dao\ClienteDAO.class
 mx\com\tiendaonline\cliente\model\entity\ClienteDireccion.class

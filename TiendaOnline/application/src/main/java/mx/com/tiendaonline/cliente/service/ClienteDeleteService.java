@@ -3,6 +3,9 @@ package mx.com.tiendaonline.cliente.service;
 import lombok.RequiredArgsConstructor;
 import mx.com.tiendaonline.cliente.port.dao.ClienteDAO;
 import mx.com.tiendaonline.cliente.port.repository.ClienteRepository;
+import org.springframework.stereotype.Service;
+
+@Service
 @RequiredArgsConstructor
 public class ClienteDeleteService {
 

@@ -7,8 +7,9 @@ import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.cliente.port.event.ClienteEventCreate;
 import mx.com.tiendaonline.cliente.port.repository.ClienteRepository;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 @RequiredArgsConstructor
 public class ClienteCreateService {
 

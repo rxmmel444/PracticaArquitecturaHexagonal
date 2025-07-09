@@ -26,9 +26,9 @@ public class ClienteRespositoryImpl implements ClienteRepository {
 
     @Override
     public Cliente update(Cliente cliente) {
-        var clienteActualizar = clienteDboMapper.toEntity(cliente);
-        var actualizado = adapterRepository.save(clienteActualizar);
-        return clienteDboMapper.toDomain(actualizado);
+        ClienteEntity entity = clienteDboMapper.toEntity(cliente);
+        ClienteEntity updated = adapterRepository.save(entity); 
+        return clienteDboMapper.toDomain(updated);
     }
 
 
