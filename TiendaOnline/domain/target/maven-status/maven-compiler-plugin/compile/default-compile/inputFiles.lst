@@ -1,4 +1,3 @@
-C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\beanconfiguration\ClienteBean.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\dto\ClienteDTO.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\dto\command\ClienteCreateCommand.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\dto\command\ClienteUpdateCommand.java
@@ -10,6 +9,7 @@ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\doma
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteNombre.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteTelefono.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\CompraProducto.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\exception\ClienteException.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\dao\ClienteDAO.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\event\ClienteEventCreate.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\repository\ClienteRepository.java
@@ -19,6 +19,7 @@ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\doma
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\service\ClienteDeleteService.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\service\ClienteUpdateService.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\compraproducto\model\dto\command\CompraCreateCommand.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\compraproducto\model\dto\command\CompraProductoCommand.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\compraproducto\model\dto\command\CompraUpdateCommand.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\compraproducto\model\dto\CompraDTO.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\compraproducto\model\dto\CompraProductoDTO.java

@@ -1,4 +1,4 @@
-/*
+
 package mx.com.tiendaonline.compraproducto.mapper;
 
 import mx.com.tiendaonline.compraproducto.model.dto.CompraDTO;
@@ -10,20 +10,18 @@ import org.mapstruct.Mapping;
 import org.springframework.stereotype.Component;
 
 @Mapper(componentModel = "spring")
-@Component
+
 public interface CompraDtoMapper {
 
+    @Mapping(source = "id", target = "id")
         @Mapping(source = "cliente", target = "cliente")
         @Mapping(source = "productos", target = "productos")
-        @Mapping(source = "precioTotal.valor", target = "precioTotal")
-        @Mapping(source = "fechaCompra.valor", target = "fechaCompra")
+        @Mapping(source = "fechaCompra", target = "fechaCompra")
         CompraDTO domainToDto(Compra compra);
-
-        @Mapping(source = "producto.id", target = "productoId")
-        @Mapping(source = "cantidad.valor", target = "cantidad")
-        @Mapping(source = "precioUnitario.valor", target = "precioUnitario")
+        @Mapping(source = "producto", target = "producto")
+        @Mapping(source = "cantidad", target = "cantidad")
+        @Mapping(source = "precioUnitario", target = "precioUnitario")
         CompraProductoDTO   toDto(CompraProducto compraProducto);
     }
 
 
- */

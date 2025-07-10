@@ -12,8 +12,10 @@ public class CompraCreateCommand {
     private Long clienteId;
     private List<CompraProductoCommand> producto;
 
-
-    private static class CompraProductoCommand{
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public class CompraProductoCommand {
         private Long productoId;
         private Integer cantidad;
     }

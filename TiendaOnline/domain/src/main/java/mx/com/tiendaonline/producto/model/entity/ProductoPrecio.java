@@ -5,9 +5,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-@AllArgsConstructor
+
 @NoArgsConstructor
 @Getter
 public class ProductoPrecio {
     private BigDecimal precio;
+
+    public ProductoPrecio(BigDecimal precio) {
+        if (precio.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new RuntimeException("EL NOMBRE ES OBLIGATORIO");
+
+        }
+        this.precio = precio;
+    }
 }

@@ -1,5 +1,4 @@
 
-/*
 package mx.com.tiendaonline.compraproducto.service;
 
 import lombok.RequiredArgsConstructor;
@@ -7,8 +6,12 @@ import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.cliente.port.dao.ClienteDAO;
 import mx.com.tiendaonline.compraproducto.model.dto.CompraDTO;
 import mx.com.tiendaonline.compraproducto.model.dto.command.CompraCreateCommand;
+
+import mx.com.tiendaonline.compraproducto.model.dto.command.CompraProductoCommand;
 import mx.com.tiendaonline.compraproducto.model.entity.Compra;
 import mx.com.tiendaonline.compraproducto.model.entity.CompraProducto;
+import mx.com.tiendaonline.compraproducto.model.entity.FechaCompra;
+import mx.com.tiendaonline.compraproducto.model.entity.PrecioTotal;
 import mx.com.tiendaonline.compraproducto.port.dao.CompraDAO;
 import mx.com.tiendaonline.compraproducto.port.repository.CompraRespository;
 import mx.com.tiendaonline.producto.model.entity.Producto;
@@ -27,22 +30,35 @@ public class CompraCreateService {
 
     public Compra crearCompra(CompraCreateCommand command){
         Cliente cliente = clienteDAO.getById(command.getClienteId());
-
+/*obtener lista de productos comprados y crea objectos nuevos en lista del dominio*/
         List<CompraProducto> productosComprados = new ArrayList<>();
 
+ Double total = 0.0;
+        for (CompraCreateCommand.CompraProductoCommand p : command.getProducto()) {
 
-        for (CompraCreateCommand.ProductoCompraCommand p : command.getProductos()) {
             Producto producto = productoDAO.getById(p.getProductoId());
+
             double precioUnitario = producto.getPrecio().doubleValue();
+
             int cantidad = p.getCantidad();
             total += precioUnitario * cantidad;
 
-            productosComprados.add(new CompraProducto(producto, cantidad, precioUnitario));
+            productosComprados.add(new CompraProducto(
+                    producto,
+                    cantidad,
+                    precioUnitario));
         }
 
-        return ventaRepository.save(new Compra(cliente, productosComprados, total, LocalDateTime.now()));
+        Compra compra= new Compra(
+
+               cliente,
+                productosComprados,
+                total,LocalDateTime.now()
+
+        );
+        return compraRespository.create(compra);
     }
 }
 
 
- */
+

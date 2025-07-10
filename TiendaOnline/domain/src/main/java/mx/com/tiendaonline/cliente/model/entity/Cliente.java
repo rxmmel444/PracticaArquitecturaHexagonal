@@ -1,10 +1,13 @@
 package mx.com.tiendaonline.cliente.model.entity;
 
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Setter
+@Getter
 @NoArgsConstructor
 public class Cliente {
     private  ClienteId id;
@@ -33,6 +36,7 @@ public class Cliente {
         this.telefono = new ClienteTelefono(telefono);
         this.direccion = new ClienteDireccion(direccion);
     }
+
     public Long getId() {
         return this.id.getId();
     }

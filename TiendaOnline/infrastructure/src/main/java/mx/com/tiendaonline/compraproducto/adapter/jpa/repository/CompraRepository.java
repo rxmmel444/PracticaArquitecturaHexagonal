@@ -1,4 +1,36 @@
 package mx.com.tiendaonline.compraproducto.adapter.jpa.repository;
 
-public class CompraRepository {
+import mx.com.tiendaonline.compraproducto.adapter.entity.CompraEntity;
+import mx.com.tiendaonline.compraproducto.adapter.jpa.CompraJpaAdapterRespository;
+import mx.com.tiendaonline.compraproducto.adapter.mapper.CompraDboMapper;
+import mx.com.tiendaonline.compraproducto.model.entity.Compra;
+import mx.com.tiendaonline.compraproducto.port.repository.CompraRespository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class CompraRepository implements CompraRespository {
+
+    private final CompraJpaAdapterRespository respository;
+    private final CompraDboMapper compraDboMapper;
+
+    public CompraRepository(CompraJpaAdapterRespository respository, CompraDboMapper compraDboMapper) {
+        this.respository = respository;
+        this.compraDboMapper = compraDboMapper;
+    }
+
+
+    @Override
+    public Compra create(Compra compra) {
+        CompraEntity compraEntity = compraDboMapper.
+    }
+
+    @Override
+    public Compra update(Compra compra, Long id) {
+        return null;
+    }
+
+    @Override
+    public void delete(Long id) {
+
+    }
 }

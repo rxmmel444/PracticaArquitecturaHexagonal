@@ -1,5 +1,5 @@
 
-/*
+
 package mx.com.tiendaonline.compraproducto.commnad;
 
 
@@ -14,14 +14,13 @@ import org.springframework.stereotype.Component;
 @RequiredArgsConstructor
 public class CompraCrateHandler {
 
-    private CompraCreateService createService;
-    private CompraDtoMapper dtoMapper;
+    private final CompraCreateService createService;
+    private final CompraDtoMapper dtoMapper;
 
     public CompraDTO ejecutar(CompraCreateCommand command){
         var compra = createService.crearCompra(command);
-        return dtoMapper.toDto(compra);
+        return dtoMapper.domainToDto(compra);
     }
 }
 
 
- */

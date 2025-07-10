@@ -16,6 +16,7 @@ mx\com\tiendaonline\producto\port\repository\ProductoRepository.class
 mx\com\tiendaonline\cliente\model\entity\ClienteTelefono.class
 mx\com\tiendaonline\cliente\model\entity\ClienteId.class
 mx\com\tiendaonline\compraproducto\port\dao\CompraDAO.class
+mx\com\tiendaonline\cliente\model\exception\ClienteException.class
 mx\com\tiendaonline\cliente\service\ClienteUpdateService.class
 mx\com\tiendaonline\producto\model\entity\ProductoPrecio.class
 mx\com\tiendaonline\compraproducto\model\dto\command\CompraUpdateCommand.class
@@ -27,6 +28,7 @@ mx\com\tiendaonline\cliente\port\repository\ClienteRepository.class
 mx\com\tiendaonline\compraproducto\model\dto\command\CompraCreateCommand.class
 mx\com\tiendaonline\cliente\model\entity\ClienteNombre.class
 mx\com\tiendaonline\compraproducto\model\entity\PrecioTotal.class
+mx\com\tiendaonline\compraproducto\model\entity\Compra.class
 mx\com\tiendaonline\message\model\dto\command\ClienteMessageCrateCommand.class
 mx\com\tiendaonline\cliente\model\dto\command\ClienteUpdateCommand.class
 mx\com\tiendaonline\compraproducto\model\entity\FechaCompra.class
@@ -36,6 +38,7 @@ mx\com\tiendaonline\cliente\service\ClienteDeleteService.class
 mx\com\tiendaonline\compraproducto\model\entity\PrecioUnitario.class
 mx\com\tiendaonline\compraproducto\service\CompraAllService.class
 mx\com\tiendaonline\compraproducto\model\dto\command\CompraCreateCommand$CompraProductoCommand.class
+mx\com\tiendaonline\compraproducto\service\CompraCreateService.class
 mx\com\tiendaonline\producto\model\entity\Producto.class
 mx\com\tiendaonline\compraproducto\service\CompraUpdateService.class
 mx\com\tiendaonline\compraproducto\service\CantidadProducto.class
@@ -45,7 +48,6 @@ mx\com\tiendaonline\cliente\port\event\ClienteEventCreate.class
 mx\com\tiendaonline\cliente\model\entity\CompraProducto.class
 mx\com\tiendaonline\compraproducto\service\CompraByIdService.class
 mx\com\tiendaonline\cliente\port\dao\ClienteDAO.class
-mx\com\tiendaonline\beanconfiguration\ClienteBean.class
 mx\com\tiendaonline\cliente\model\entity\ClienteApellido.class
 mx\com\tiendaonline\producto\service\ProductoByIdService.class
 mx\com\tiendaonline\cliente\model\entity\ClienteEmail.class
@@ -54,3 +56,4 @@ mx\com\tiendaonline\compraproducto\model\dto\CompraDTO.class
 mx\com\tiendaonline\compraproducto\service\CompraDeleteService.class
 mx\com\tiendaonline\compraproducto\model\entity\CompraId.class
 mx\com\tiendaonline\message\port\repository\ClienteEventRepository.class
+mx\com\tiendaonline\compraproducto\model\dto\command\CompraProductoCommand.class

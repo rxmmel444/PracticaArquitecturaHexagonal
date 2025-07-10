@@ -16,7 +16,7 @@ public class CompraProducto {
     private CantidadProductos cantidad;
     private PrecioUnitario precioUnitario;
 
-    public CompraProducto(Producto producto, Integer cantidad, BigDecimal precioUnitario) {
+    public CompraProducto(Producto producto, Integer cantidad, Double precioUnitario) {
         this.producto = producto;
         this.cantidad = new CantidadProductos(cantidad);
         this.precioUnitario = new PrecioUnitario(precioUnitario);

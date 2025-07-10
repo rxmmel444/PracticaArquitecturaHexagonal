@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Data
 public class PrecioUnitario {
-    private BigDecimal precioUnitario;
+    private Double precioUnitario;
 
 
 }
