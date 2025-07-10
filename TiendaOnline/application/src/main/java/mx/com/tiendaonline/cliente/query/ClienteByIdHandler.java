@@ -1,8 +1,9 @@
 package mx.com.tiendaonline.cliente.query;
 
 import lombok.RequiredArgsConstructor;
-import mx.com.tiendaonline.cliente.dto.ClienteDTO;
+
 import mx.com.tiendaonline.cliente.mapper.ClienteDtoMapper;
+import mx.com.tiendaonline.cliente.model.dto.ClienteDTO;
 import mx.com.tiendaonline.cliente.service.ClienteByIdService;
 import org.springframework.stereotype.Component;
 

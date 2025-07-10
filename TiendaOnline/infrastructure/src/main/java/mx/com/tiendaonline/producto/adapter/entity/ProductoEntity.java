@@ -21,19 +21,23 @@ import java.util.List;
 public class ProductoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
 
     private String nombre;
     private BigDecimal precio;
-
     private Integer stock;
 
 
     @OneToMany(mappedBy = "producto", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<CompraProductoEntity> compras = new ArrayList<>();
 
-
     public ProductoEntity(Long id, String nombre, BigDecimal precio, Integer stock) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
     }
+
+
+
 }

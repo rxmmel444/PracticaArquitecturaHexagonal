@@ -1,11 +1,10 @@
 package mx.com.tiendaonline.cliente.command;
-
-import lombok.Data;
-import lombok.RequiredArgsConstructor;
-import mx.com.tiendaonline.cliente.dto.ClienteDTO;
-import mx.com.tiendaonline.cliente.mapper.ClienteDtoMapper;
-import mx.com.tiendaonline.cliente.model.entity.Cliente;
+import mx.com.tiendaonline.cliente.model.dto.ClienteDTO;
+import mx.com.tiendaonline.cliente.model.dto.command.ClienteCreateCommand;
 import mx.com.tiendaonline.cliente.service.ClienteCreateService;
+import lombok.RequiredArgsConstructor;
+
+import mx.com.tiendaonline.cliente.mapper.ClienteDtoMapper;
 import org.springframework.stereotype.Component;
 
 @Component

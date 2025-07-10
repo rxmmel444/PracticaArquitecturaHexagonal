@@ -1,7 +1,4 @@
 package mx.com.tiendaonline.producto.adapter.mapper;
-
-import mx.com.tiendaonline.cliente.adapter.entity.ClienteEntity;
-import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.producto.adapter.entity.ProductoEntity;
 import mx.com.tiendaonline.producto.model.entity.Producto;
 import org.springframework.stereotype.Component;
@@ -22,17 +19,15 @@ public class ProductoDboMapper {
         );
     }
 
-    public Cliente toDomain(ClienteEntity entity) {
+    public Producto toDomain(ProductoEntity entity) {
         if (entity == null)
             return null;
 
-        return new Cliente(
+        return new Producto(
                 entity.getId(),
                 entity.getNombre(),
-                entity.getApellido(),
-                entity.getEmail(),
-                entity.getTelefono(),
-                entity.getDireccion()
+                entity.getPrecio(),
+                entity.getStock()
         );
     }
     public ProductoEntity toEntityWithId(Producto domain) {

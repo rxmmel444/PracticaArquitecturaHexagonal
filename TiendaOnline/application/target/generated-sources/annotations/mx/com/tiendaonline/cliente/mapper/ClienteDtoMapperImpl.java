@@ -1,14 +1,14 @@
 package mx.com.tiendaonline.cliente.mapper;
 
 import javax.annotation.processing.Generated;
-import mx.com.tiendaonline.cliente.command.ClienteCreateCommand;
-import mx.com.tiendaonline.cliente.dto.ClienteDTO;
+import mx.com.tiendaonline.cliente.model.dto.ClienteDTO;
+import mx.com.tiendaonline.cliente.model.dto.command.ClienteCreateCommand;
 import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-07-09T06:20:20-0600",
+    date = "2025-07-10T00:46:46-0600",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.12 (Oracle Corporation)"
 )
 @Component

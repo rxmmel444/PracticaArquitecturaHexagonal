@@ -13,6 +13,10 @@ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infr
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\compraproducto\adapter\entity\CompraProductoEntity.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\compraproducto\adapter\jpa\dao\CompraDAO.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\compraproducto\adapter\jpa\repository\CompraRepository.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\compraproducto\adapter\mapper\CompraDboMapper.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\compraproducto\rest\advice\CompraException.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\compraproducto\rest\controller\CompraCommandController.java
+C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\compraproducto\rest\controller\CompraQueryController.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto\adapter\entity\ProductoEntity.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto\adapter\jpa\dao\ProductoDAOImpl.java
 C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto\adapter\jpa\ProductoJpaAdapterRepository.java

@@ -30,7 +30,7 @@ public class ClienteDAOImpl implements ClienteDAO {
 
     @Override
     public Cliente getById(Long id) {
-        var optionalUser = adapterRepository.findById(id);
-        return clienteDboMapper.toDomain(optionalUser.get());
+        var cliente = adapterRepository.findById(id);
+        return clienteDboMapper.toDomain(cliente.get());
     }
 }

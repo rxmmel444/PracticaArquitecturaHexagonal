@@ -2,10 +2,13 @@ package mx.com.tiendaonline.cliente.rest.controller;
 
 
 import mx.com.tiendaonline.cliente.command.*;
-import mx.com.tiendaonline.cliente.dto.ClienteDTO;
+
 import mx.com.tiendaonline.cliente.mapper.ClienteDtoMapper;
 
 import mx.com.tiendaonline.cliente.adapter.kafka.KafkaProducerAdapter;
+import mx.com.tiendaonline.cliente.model.dto.ClienteDTO;
+import mx.com.tiendaonline.cliente.model.dto.command.ClienteCreateCommand;
+import mx.com.tiendaonline.cliente.model.dto.command.ClienteUpdateCommand;
 import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.cliente.service.ClienteDeleteService;
 import mx.com.tiendaonline.cliente.service.ClienteUpdateService;
@@ -19,14 +22,12 @@ public class ClienteCommandController {
 
     private final KafkaProducerAdapter producerAdapter;
     private final ClienteCreateHandler createHandler;
-private final ClienteDtoMapper dtoMapper;
 private final ClienteUpdateHandler updateHandler;
 private final ClienteDeleteHandler deleteHandler;
 
-    public ClienteCommandController(KafkaProducerAdapter producerAdapter, ClienteCreateHandler createHandler, ClienteDtoMapper dtoMapper, ClienteUpdateHandler updateHandler, ClienteDeleteHandler deleteHandler) {
+    public ClienteCommandController(KafkaProducerAdapter producerAdapter, ClienteCreateHandler createHandler, ClienteUpdateHandler updateHandler, ClienteDeleteHandler deleteHandler) {
         this.producerAdapter = producerAdapter;
         this.createHandler = createHandler;
-        this.dtoMapper = dtoMapper;
         this.updateHandler = updateHandler;
         this.deleteHandler = deleteHandler;
     }
@@ -49,7 +50,7 @@ private final ClienteDeleteHandler deleteHandler;
 
     @PutMapping("/{id}")
     public ClienteDTO clientedUpdate(@RequestBody ClienteUpdateCommand cliente,
-                            @PathVariable ("id") Long id){
+                                     @PathVariable ("id") Long id){
         return updateHandler.ejecutar(cliente, id);
     }
 

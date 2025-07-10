@@ -2,8 +2,9 @@ package mx.com.tiendaonline.cliente.adapter.kafka;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import mx.com.tiendaonline.cliente.dto.ClienteDTO;
+
 import mx.com.tiendaonline.cliente.mapper.ClienteDtoMapper;
+import mx.com.tiendaonline.cliente.model.dto.ClienteDTO;
 import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.cliente.port.event.ClienteEventCreate;
 import org.springframework.kafka.core.KafkaTemplate;

@@ -34,7 +34,6 @@ public class ClienteRespositoryImpl implements ClienteRepository {
 
     @Override
     public void delete(Long id) {
-
         adapterRepository.deleteById(id);
     }
 }

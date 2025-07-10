@@ -1,7 +1,9 @@
 package mx.com.tiendaonline.cliente.mapper;
 
-import mx.com.tiendaonline.cliente.command.ClienteCreateCommand;
-import mx.com.tiendaonline.cliente.dto.ClienteDTO;
+
+import mx.com.tiendaonline.cliente.model.dto.ClienteDTO;
+import mx.com.tiendaonline.cliente.model.dto.command.ClienteCreateCommand;
+
 import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

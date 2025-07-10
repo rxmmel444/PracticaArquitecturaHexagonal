@@ -1,6 +1,7 @@
 package mx.com.tiendaonline.cliente.rest.controller;
 
-import mx.com.tiendaonline.cliente.dto.ClienteDTO;
+
+import mx.com.tiendaonline.cliente.model.dto.ClienteDTO;
 import mx.com.tiendaonline.cliente.query.ClienteAllHandlerQuery;
 import mx.com.tiendaonline.cliente.query.ClienteByIdHandler;
 import org.springframework.web.bind.annotation.GetMapping;

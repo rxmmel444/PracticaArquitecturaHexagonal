@@ -1,7 +1,8 @@
 package mx.com.tiendaonline.cliente.adapter.kafka;
 
 import lombok.extern.slf4j.Slf4j;
-import mx.com.tiendaonline.cliente.dto.ClienteDTO;
+
+import mx.com.tiendaonline.cliente.model.dto.ClienteDTO;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
