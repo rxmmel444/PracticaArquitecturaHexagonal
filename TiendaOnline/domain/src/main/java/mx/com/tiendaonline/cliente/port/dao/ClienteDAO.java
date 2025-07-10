@@ -9,4 +9,6 @@ public interface ClienteDAO {
     List<Cliente> getAllClientes();
 
     Cliente getById (Long id);
+
+    boolean existByEmail(String email);
 }

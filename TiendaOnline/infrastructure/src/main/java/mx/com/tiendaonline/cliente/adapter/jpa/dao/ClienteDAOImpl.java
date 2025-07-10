@@ -2,6 +2,7 @@ package mx.com.tiendaonline.cliente.adapter.jpa.dao;
 import mx.com.tiendaonline.cliente.adapter.jpa.ClienteJpaAdapterRepository;
 import mx.com.tiendaonline.cliente.adapter.mapper.ClienteDboMapper;
 import mx.com.tiendaonline.cliente.model.entity.Cliente;
+import mx.com.tiendaonline.cliente.model.entity.ClienteEmail;
 import mx.com.tiendaonline.cliente.port.dao.ClienteDAO;
 import org.springframework.stereotype.Repository;
 
@@ -32,5 +33,10 @@ public class ClienteDAOImpl implements ClienteDAO {
     public Cliente getById(Long id) {
         var cliente = adapterRepository.findById(id);
         return clienteDboMapper.toDomain(cliente.get());
+    }
+
+    @Override
+    public boolean existByEmail(String email) {
+        return adapterRepository.existsByEmail(email);
     }
 }

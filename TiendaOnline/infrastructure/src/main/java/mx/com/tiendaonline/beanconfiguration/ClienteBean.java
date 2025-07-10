@@ -4,6 +4,8 @@ import mx.com.tiendaonline.cliente.port.dao.ClienteDAO;
 import mx.com.tiendaonline.cliente.port.event.ClienteEventCreate;
 import mx.com.tiendaonline.cliente.port.repository.ClienteRepository;
 import mx.com.tiendaonline.cliente.service.*;
+import mx.com.tiendaonline.producto.model.entity.Producto;
+import mx.com.tiendaonline.producto.port.dao.ProductoDAO;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,8 +17,8 @@ public class ClienteBean {
         return new ClienteAllService(clienteDAO);
     }
     @Bean
-    public ClienteCreateService clienteCreateService(ClienteRepository repository, ClienteEventCreate eventCreate) {
-        return new ClienteCreateService(repository, eventCreate);
+    public ClienteCreateService clienteCreateService(ClienteRepository repository, ClienteEventCreate eventCreate, ClienteDAO dao) {
+        return new ClienteCreateService(repository, eventCreate,dao);
     }
     @Bean
     public ClienteDeleteService deleteService(ClienteDAO clienteDAO, ClienteRepository clienteRepository){
