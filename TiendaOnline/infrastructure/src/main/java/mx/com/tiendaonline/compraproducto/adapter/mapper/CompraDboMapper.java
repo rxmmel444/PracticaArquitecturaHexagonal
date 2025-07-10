@@ -1,4 +1,4 @@
-/*
+
 package mx.com.tiendaonline.compraproducto.adapter.mapper;
 
 import mx.com.tiendaonline.cliente.mapper.ClienteDtoMapper;
@@ -6,6 +6,8 @@ import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.compraproducto.adapter.entity.CompraEntity;
 import mx.com.tiendaonline.compraproducto.adapter.entity.CompraProductoEntity;
 import mx.com.tiendaonline.compraproducto.model.entity.*;
+import mx.com.tiendaonline.producto.adapter.mapper.ProductoDboMapper;
+import mx.com.tiendaonline.producto.model.entity.Producto;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -13,6 +15,7 @@ import java.util.List;
 public class CompraDboMapper {
 
     private ClienteDtoMapper mapper;
+    private ProductoDboMapper dboMapper;
     public CompraEntity toEntity(Compra domain) {
         if (domain == null) {
             return null;
@@ -41,6 +44,7 @@ public class CompraDboMapper {
                 return null;
             }
 
+            List<Producto> productos = entity.getProductos().stream().map()
             Compra compras = new Compra();
         compras.setId(new CompraId(entity.getId()));
         compras.setCliente(ClienteDtoMapper.toDomain(entity.getCliente())); // si tienes un mapper para Cliente
@@ -58,4 +62,3 @@ public class CompraDboMapper {
                     }).toList();
         }
 }
-*/
