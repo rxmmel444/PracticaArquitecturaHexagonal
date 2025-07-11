@@ -15,7 +15,6 @@ import java.util.List;
 
 @Entity
 @Table(name = "productos")
-@AllArgsConstructor
 @NoArgsConstructor
 @Data
 public class ProductoEntity {
@@ -27,9 +26,6 @@ public class ProductoEntity {
     private BigDecimal precio;
     private Integer stock;
 
-
-    @OneToMany(mappedBy = "producto", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<CompraProductoEntity> compras = new ArrayList<>();
 
     public ProductoEntity(Long id, String nombre, BigDecimal precio, Integer stock) {
         this.id = id;

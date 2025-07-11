@@ -1,6 +1,7 @@
 package mx.com.tiendaonline.producto.adapter.mapper;
 import mx.com.tiendaonline.producto.adapter.entity.ProductoEntity;
 import mx.com.tiendaonline.producto.model.entity.Producto;
+import mx.com.tiendaonline.producto.model.entity.ProductoId;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -35,9 +36,14 @@ public class ProductoDboMapper {
             return null;
 
         ProductoEntity entity = toEntity(domain);
-        entity.setId(entity.getId());
+        entity.setId(domain.getId());
         return entity;
     }
 
-    public
+    public Producto toDomainWithOutCompra(ProductoEntity entity){
+        if (entity == null){
+            return null;
+        }
+        return new Producto(entity.getId(), entity.getNombre(), entity.getPrecio(),entity.getStock());
+    }
 }

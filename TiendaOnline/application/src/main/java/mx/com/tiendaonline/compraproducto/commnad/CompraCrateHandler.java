@@ -19,7 +19,7 @@ public class CompraCrateHandler {
 
     public CompraDTO ejecutar(CompraCreateCommand command){
         var compra = createService.crearCompra(command);
-        return dtoMapper.domainToDto(compra);
+        return dtoMapper.toDto(compra);
     }
 }
 

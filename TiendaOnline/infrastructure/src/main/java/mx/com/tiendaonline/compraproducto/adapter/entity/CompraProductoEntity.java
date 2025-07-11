@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import mx.com.tiendaonline.producto.adapter.entity.ProductoEntity;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "compra_productos")
 @Data
@@ -16,17 +18,19 @@ public class CompraProductoEntity {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
+private String nombre;
 
-@ManyToOne(fetch = FetchType.LAZY)
+
+private Long productoId;
+
+private Integer cantidad;
+
+private BigDecimal precioUnitario;
+
+@ManyToOne
 @JoinColumn(name = "compra_id")
 private CompraEntity compra;
 
 
-@ManyToOne(fetch = FetchType.LAZY)
-@JoinColumn(name = "producto_id")
-private ProductoEntity producto;
 
-private Integer cantidad;
-
-private Double precioUnitario;
 }

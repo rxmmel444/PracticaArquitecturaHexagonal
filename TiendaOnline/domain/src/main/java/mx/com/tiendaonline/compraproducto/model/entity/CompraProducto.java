@@ -11,14 +11,8 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CompraProducto {
-
-    private Producto producto;
-    private CantidadProductos cantidad;
-    private PrecioUnitario precioUnitario;
-
-    public CompraProducto(Producto producto, Integer cantidad, Double precioUnitario) {
-        this.producto = producto;
-        this.cantidad = new CantidadProductos(cantidad);
-        this.precioUnitario = new PrecioUnitario(precioUnitario);
-    }
+private Long productoId;
+private String nombre;
+private BigDecimal precioUnitario;
+private Integer cantidad;
 }

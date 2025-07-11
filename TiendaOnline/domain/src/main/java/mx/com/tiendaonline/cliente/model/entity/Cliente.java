@@ -38,27 +38,27 @@ public class Cliente {
     }
 
     public Long getId() {
-        return this.id.getId();
+        return id.clienteId;
     }
 
     public String getNombre() {
-        return this.nombre.getNombre();
+        return nombre.getNombre();
     }
 
     public String getApellido() {
-        return this.apellido.getApellido();
+        return apellido.getApellido();
     }
 
     public String getEmail() {
-        return this.email.getEmail();
+        return email.getEmail();
     }
 
     public String getTelefono() {
-        return this.telefono.getTelofono();
+        return telefono.getTelofono();
     }
 
     public String getDireccion() {
-        return this.direccion.getDireccion();
+        return direccion.getDireccion();
     }
 
 

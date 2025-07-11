@@ -21,7 +21,9 @@ public class CompraRepository implements CompraRespository {
 
     @Override
     public Compra create(Compra compra) {
-        CompraEntity compraEntity = compraDboMapper.
+        var compraEntity = compraDboMapper.toDbo(compra);
+        var save = respository.save(compraEntity);
+        return compraDboMapper.toDomain(save);
     }
 
     @Override

@@ -1,14 +1,22 @@
 package mx.com.tiendaonline.compraproducto.model.dto;
 
-import mx.com.tiendaonline.producto.model.dto.ProductoDTO;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import mx.com.tiendaonline.compraproducto.model.entity.CompraProducto;
 
+
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class CompraDTO {
+
     private Long id;
     private Long clienteId;
-    private List<ProductoDTO> productos;
-    private Double precioTotal;
+    private List<CompraProducto> productos;
+    private BigDecimal precioTotal;
     private LocalDateTime fechaCompra;
 }

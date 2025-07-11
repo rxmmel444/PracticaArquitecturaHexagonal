@@ -13,15 +13,14 @@ import org.springframework.stereotype.Component;
 
 public interface CompraDtoMapper {
 
-    @Mapping(source = "id", target = "id")
-        @Mapping(source = "cliente", target = "cliente")
-        @Mapping(source = "productos", target = "productos")
-        @Mapping(source = "fechaCompra", target = "fechaCompra")
-        CompraDTO domainToDto(Compra compra);
-        @Mapping(source = "producto", target = "producto")
-        @Mapping(source = "cantidad", target = "cantidad")
-        @Mapping(source = "precioUnitario", target = "precioUnitario")
-        CompraProductoDTO   toDto(CompraProducto compraProducto);
+
+    @Mapping(source = "clienteId", target = "clienteId")
+    @Mapping(source = "productos", target = "productos")
+    @Mapping(source = "precioTotal", target = "precioTotal")
+    @Mapping(source = "fechaCompra", target = "fechaCompra")
+    CompraDTO toDto (Compra compra);
+    Compra toDomain(CompraDTO compraDTO);
+
     }
 
 

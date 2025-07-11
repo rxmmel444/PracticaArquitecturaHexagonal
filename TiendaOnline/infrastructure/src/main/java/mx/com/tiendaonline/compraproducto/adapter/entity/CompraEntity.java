@@ -5,7 +5,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import mx.com.tiendaonline.cliente.adapter.entity.ClienteEntity;
+import mx.com.tiendaonline.cliente.model.dto.ClienteDTO;
+import mx.com.tiendaonline.producto.adapter.entity.ProductoEntity;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,13 +23,16 @@ public class CompraEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Double precioTotal;
+    private BigDecimal precioTotal;
     private LocalDateTime fechaCompra;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+
+    @ManyToOne
     @JoinColumn(name = "cliente_id")
     private ClienteEntity cliente;
 
+
     @OneToMany(mappedBy = "compra" ,cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<CompraProductoEntity> productos = new ArrayList<>();
+    private List<CompraProductoEntity> productos;
+
 }

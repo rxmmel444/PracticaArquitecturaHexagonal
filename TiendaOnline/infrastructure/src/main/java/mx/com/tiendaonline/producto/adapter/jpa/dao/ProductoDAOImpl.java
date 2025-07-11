@@ -35,4 +35,9 @@ public class ProductoDAOImpl implements ProductoDAO {
       var producto = adapterRepository.findById(id);
       return productoDboMapper.toDomain(producto.get());
     }
+
+    @Override
+    public void actualziarStock(Long id, Integer cantidad) {
+
+    }
 }
