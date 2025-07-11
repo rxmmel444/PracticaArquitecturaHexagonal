@@ -1,9 +1,9 @@
 package mx.com.tiendaonline.producto.port.dao;
 
-import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.producto.model.entity.Producto;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface ProductoDAO {
 

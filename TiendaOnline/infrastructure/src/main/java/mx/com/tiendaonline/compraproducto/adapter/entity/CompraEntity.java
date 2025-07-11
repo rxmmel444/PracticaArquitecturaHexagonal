@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import mx.com.tiendaonline.cliente.adapter.entity.ClienteEntity;
 import mx.com.tiendaonline.cliente.model.dto.ClienteDTO;
+import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.producto.adapter.entity.ProductoEntity;
 
 import java.math.BigDecimal;
@@ -27,12 +28,13 @@ public class CompraEntity {
     private LocalDateTime fechaCompra;
 
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cliente_id")
     private ClienteEntity cliente;
 
 
     @OneToMany(mappedBy = "compra" ,cascade = CascadeType.ALL, orphanRemoval = true)
     private List<CompraProductoEntity> productos;
+
 
 }

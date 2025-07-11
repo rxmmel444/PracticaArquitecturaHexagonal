@@ -2,15 +2,12 @@ package mx.com.tiendaonline.compraproducto.model.dto.command;
 
 import lombok.*;
 
-import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class CompraCreateCommand {
-    private Long clienteId;
-    private List<CompraProductosCommand> productos;
-
-
+public class CompraProductosCommand {
+    private Long productoId;
+    private Integer cantidad;
 }

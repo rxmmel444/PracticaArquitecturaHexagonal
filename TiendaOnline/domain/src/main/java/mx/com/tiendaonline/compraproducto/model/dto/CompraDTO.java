@@ -1,8 +1,6 @@
 package mx.com.tiendaonline.compraproducto.model.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import mx.com.tiendaonline.compraproducto.model.entity.CompraProducto;
 
 
@@ -12,6 +10,8 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Setter
+@Getter
 public class CompraDTO {
 
     private Long id;

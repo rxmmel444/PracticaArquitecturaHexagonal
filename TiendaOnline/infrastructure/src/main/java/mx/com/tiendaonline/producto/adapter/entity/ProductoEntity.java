@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import mx.com.tiendaonline.compraproducto.adapter.entity.CompraEntity;
 import mx.com.tiendaonline.compraproducto.adapter.entity.CompraProductoEntity;
+import mx.com.tiendaonline.producto.model.entity.Producto;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ import java.util.List;
 @Table(name = "productos")
 @NoArgsConstructor
 @Data
-public class ProductoEntity {
+public class ProductoEntity extends Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

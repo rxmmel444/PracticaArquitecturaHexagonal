@@ -50,7 +50,7 @@ public class CompraDboMapper {
                         )).collect(Collectors.toList());
         CompraEntity entity = new CompraEntity();
         entity.setId(domain.getId());
-        entity.setCliente(entity.getCliente());
+        entity.setCliente(clienteDboMapper.toEntity(domain.getCliente()));
         entity.setPrecioTotal(domain.getPrecioTotal());
         entity.setFechaCompra(domain.getFechaCompra());
         entity.setProductos(productoEntities);
@@ -58,7 +58,7 @@ public class CompraDboMapper {
     }
     public Compra toDomain(CompraEntity entity) {
         if (entity == null) {
-            return null;
+            throw  new IllegalStateException("Por el momento la compra sin cliente asignado ");
         }
 
         List<CompraProducto> productos = entity.getProductos().stream()
@@ -74,7 +74,7 @@ public class CompraDboMapper {
                 entity.getId(),
                 entity.getPrecioTotal(),
                 entity.getFechaCompra(),
-                entity.getCliente().getId(),
+                clienteDboMapper.toDomain(entity.getCliente()),
                 productos
         );
     }
