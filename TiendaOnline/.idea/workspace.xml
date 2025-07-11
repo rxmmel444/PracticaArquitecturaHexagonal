@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8dc7b615-56d3-4e70-9e2a-0cd9f06e0b4d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/mx/com/tiendaonline/cliente/service/ClienteCreateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/mx/com/tiendaonline/cliente/service/ClienteCreateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/mx/com/tiendaonline/message/model/dto/command/ClienteMessageCrateCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/mx/com/tiendaonline/message/model/dto/command/ClienteMessageCreateCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/mx/com/tiendaonline/cliente/service/ClienteCreateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/domain/target/classes/mx/com/tiendaonline/cliente/service/ClienteCreateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/target/classes/mx/com/tiendaonline/message/model/dto/command/ClienteMessageCrateCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/mx/com/tiendaonline/cliente/adapter/kafka/ClienteEventeCreateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/mx/com/tiendaonline/cliente/adapter/kafka/ClienteEventeCreateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/mx/com/tiendaonline/cliente/adapter/kafka/KafkaConsumerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/mx/com/tiendaonline/cliente/adapter/kafka/KafkaConsumerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/src/main/java/mx/com/tiendaonline/cliente/adapter/kafka/KafkaProducerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/src/main/java/mx/com/tiendaonline/cliente/adapter/kafka/KafkaProducerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/target/classes/mx/com/tiendaonline/cliente/adapter/kafka/ClienteEventeCreateImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/target/classes/mx/com/tiendaonline/cliente/adapter/kafka/ClienteEventeCreateImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/target/classes/mx/com/tiendaonline/cliente/adapter/kafka/KafkaConsumerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/target/classes/mx/com/tiendaonline/cliente/adapter/kafka/KafkaConsumerAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infrastructure/target/classes/mx/com/tiendaonline/cliente/adapter/kafka/KafkaProducerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/infrastructure/target/classes/mx/com/tiendaonline/cliente/adapter/kafka/KafkaProducerAdapter.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Exception" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="RommelDev2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2zYSJ3hguangXwRzbkFvICpXUFV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TiendaOnlineApplication.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "git-widget-placeholder": "RommelDev",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/SoporteTI/Documents/WORKSPACE-MSC/EjerciciosSantander/TiendaOnline/domain/src/main/java/mx/com/tiendaonline/cliente/model/dto/command"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="mx.com.tiendaonline.cliente.model.entity" />
+      <recent name="mx.com.tiendaonline.producto.model.entity" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\dto\command" />
+      <recent name="C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\producto\model\dto\command" />
+      <recent name="C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\service" />
+      <recent name="C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\infrastructure\src\main\java\mx\com\tiendaonline\producto" />
+      <recent name="C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\producto" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mx.com.tiendaonline.compraproducto.model.dto.command" />
+      <recent name="mx.com.tiendaonline.producto.service" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TiendaOnlineApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mx.com.tiendaonline.TiendaOnlineApplication" />
+      <module name="bootloader" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mx.com.tiendaonline.beanconfiguration.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TiendaOnlineApplication" />
+        <item itemvalue="Application.TiendaOnlineApplication" />
+        <item itemvalue="Application.TiendaOnlineApplication" />
+        <item itemvalue="Application.TiendaOnlineApplication" />
+        <item itemvalue="Application.TiendaOnlineApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8dc7b615-56d3-4e70-9e2a-0cd9f06e0b4d" name="Changes" comment="" />
+      <created>1751906437707</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751906437707</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/application/src/main/java/mx/com/tiendaonline/cliente/service/ClienteCreateService.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/infrastructure/src/main/java/mx/com/tiendaonline/beanconfiguration/ClienteBean.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

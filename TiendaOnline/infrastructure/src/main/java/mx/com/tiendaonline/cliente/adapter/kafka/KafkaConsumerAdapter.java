@@ -8,13 +8,14 @@ import org.springframework.stereotype.Component;
 
 @Slf4j
 @Component
+
 public class KafkaConsumerAdapter {
 
     @KafkaListener(topics = "cliente_creado",groupId = "my-consumer-group")
     public void ConsumeMessage (ClienteDTO clienteDTO)
     {
         System.out.println("Enviado a correo a" + clienteDTO.getEmail());
-        System.out.println("Bienvenido a la tienda online,gracias por tu registro");
+        System.out.println("Bienvenido a la tienda online,gracias por tu registro"+ clienteDTO.getNombre());
         log.info("cliente Consumido" + clienteDTO );
     }
 }

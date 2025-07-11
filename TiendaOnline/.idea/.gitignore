@@ -1,11 +1,13 @@
-# Default ignored files
-/shelf/
-/workspace.xml
+# Carpeta del IDE
 .idea/
-.vscode
-.env
-# Environment-dependent path to Maven home directory
-/mavenHomeManager.xml
-.project
-.classpath
-.settings/
+.metadata/
+
+# Compilados
+/target/
+*.class
+
+# Archivos externos no deseados
+archetype-modular/
+MTiendaOnline/
+PullConexion/
+TIENDAONLONIE2/
