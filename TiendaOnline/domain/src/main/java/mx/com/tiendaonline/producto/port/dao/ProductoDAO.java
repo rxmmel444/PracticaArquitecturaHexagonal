@@ -8,7 +8,6 @@ import java.util.Optional;
 public interface ProductoDAO {
 
     List<Producto> getAllClientes();
-
     Producto getById (Long id);
     void actualziarStock(Long id,Integer cantidad);
 }

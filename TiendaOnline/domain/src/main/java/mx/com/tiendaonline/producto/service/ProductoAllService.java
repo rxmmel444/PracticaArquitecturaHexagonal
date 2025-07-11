@@ -10,7 +10,6 @@ import java.util.List;
 public class ProductoAllService {
 
     private final ProductoDAO productoDAO;
-
     public List<Producto> getProductos(){
         return productoDAO.getAllClientes();
     }

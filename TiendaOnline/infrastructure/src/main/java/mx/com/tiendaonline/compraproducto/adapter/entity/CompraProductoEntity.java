@@ -19,14 +19,9 @@ public class CompraProductoEntity {
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
 private String nombre;
-
-
 private Long productoId;
-
 private Integer cantidad;
-
 private BigDecimal precioUnitario;
-
 @ManyToOne
 @JoinColumn(name = "compra_id")
 private CompraEntity compra;

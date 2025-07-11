@@ -11,7 +11,6 @@ import java.util.List;
 public class ClienteAllService {
     private final ClienteDAO clienteDAO;
     public List<Cliente> ejecutar(){
-
       return clienteDAO.getAllClientes();
     }
 }

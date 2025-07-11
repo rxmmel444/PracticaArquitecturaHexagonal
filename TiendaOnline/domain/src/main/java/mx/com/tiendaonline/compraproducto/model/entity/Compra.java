@@ -15,14 +15,12 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
-@Setter
 public class Compra {
 
     private Long id;
     private Cliente cliente;
     private BigDecimal precioTotal;
     private LocalDateTime fechaCompra;
-    private Long clienteId;
     private List<CompraProducto> productos;
 
     public Compra(Long id, BigDecimal precioTotal, LocalDateTime fechaCompra, Cliente cliente, List<CompraProducto> productos) {

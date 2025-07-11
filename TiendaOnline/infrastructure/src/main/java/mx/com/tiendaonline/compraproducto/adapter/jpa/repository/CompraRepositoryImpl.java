@@ -1,6 +1,5 @@
 package mx.com.tiendaonline.compraproducto.adapter.jpa.repository;
 
-import mx.com.tiendaonline.compraproducto.adapter.entity.CompraEntity;
 import mx.com.tiendaonline.compraproducto.adapter.jpa.CompraJpaAdapterRespository;
 import mx.com.tiendaonline.compraproducto.adapter.mapper.CompraDboMapper;
 import mx.com.tiendaonline.compraproducto.model.entity.Compra;
@@ -8,12 +7,12 @@ import mx.com.tiendaonline.compraproducto.port.repository.CompraRespository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class CompraRepository implements CompraRespository {
+public class CompraRepositoryImpl implements CompraRespository {
 
     private final CompraJpaAdapterRespository respository;
     private final CompraDboMapper compraDboMapper;
 
-    public CompraRepository(CompraJpaAdapterRespository respository, CompraDboMapper compraDboMapper) {
+    public CompraRepositoryImpl(CompraJpaAdapterRespository respository, CompraDboMapper compraDboMapper) {
         this.respository = respository;
         this.compraDboMapper = compraDboMapper;
     }

@@ -18,7 +18,7 @@ import java.util.List;
 @Table(name = "productos")
 @NoArgsConstructor
 @Data
-public class ProductoEntity extends Producto {
+public class ProductoEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

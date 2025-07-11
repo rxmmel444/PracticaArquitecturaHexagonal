@@ -20,18 +20,16 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CompraEntity {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private BigDecimal precioTotal;
     private LocalDateTime fechaCompra;
 
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "cliente_id")
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "cliente_id", referencedColumnName = "id")
     private ClienteEntity cliente;
-
 
     @OneToMany(mappedBy = "compra" ,cascade = CascadeType.ALL, orphanRemoval = true)
     private List<CompraProductoEntity> productos;

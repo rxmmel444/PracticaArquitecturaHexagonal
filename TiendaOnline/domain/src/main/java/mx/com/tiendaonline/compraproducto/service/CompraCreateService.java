@@ -64,7 +64,8 @@ public class CompraCreateService {
             precioTotal = precioTotal.add(subtotal);
         }
         Compra compra = new Compra();
-        compra.setClienteId(cliente.getId());
+        compra.setId(cliente.getId());
+        compra.setCliente(cliente);
         compra.setFechaCompra(LocalDateTime.now());
         compra.setPrecioTotal(precioTotal);
         compra.setProductos(compraDetalle);

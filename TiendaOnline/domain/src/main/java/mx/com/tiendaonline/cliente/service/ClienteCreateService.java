@@ -29,7 +29,7 @@ public class ClienteCreateService {
                createCommand.getTelefono(),
                createCommand.getDireccion()
        );
-       event.clienteCreadoEvent(cliente);
+      // event.clienteCreadoEvent(cliente);
        return crepository.create(cliente);
     }
 }

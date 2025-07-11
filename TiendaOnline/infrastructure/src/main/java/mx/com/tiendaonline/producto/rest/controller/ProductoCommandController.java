@@ -1,11 +1,9 @@
 package mx.com.tiendaonline.producto.rest.controller;
 
 
-import mx.com.tiendaonline.cliente.adapter.kafka.KafkaProducerAdapter;
 import mx.com.tiendaonline.producto.command.ProductoCreateHandler;
 import mx.com.tiendaonline.producto.command.ProductoDeleteHandler;
 import mx.com.tiendaonline.producto.command.ProductoUpdateHandler;
-import mx.com.tiendaonline.producto.mapper.ProductoDtoMapper;
 import mx.com.tiendaonline.producto.model.dto.ProductoDTO;
 import mx.com.tiendaonline.producto.model.dto.command.ProductoCreateCommand;
 import mx.com.tiendaonline.producto.model.dto.command.ProductoUpdateCommand;

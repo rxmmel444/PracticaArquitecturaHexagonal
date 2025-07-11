@@ -30,8 +30,8 @@ public class ProductoDAOImpl implements ProductoDAO {
 
     @Override
     public Producto getById(Long id) {
-        return adapterRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("producto No encontrado con el id: " +id));
+        var cliente = adapterRepository.findById(id);
+        return productoDboMapper.toDomain(cliente.get());
     }
 
     @Override

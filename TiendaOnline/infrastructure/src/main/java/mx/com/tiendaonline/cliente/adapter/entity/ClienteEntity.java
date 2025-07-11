@@ -19,8 +19,8 @@ import java.util.List;
 public class ClienteEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
+
     @NotBlank(message = "el nombre es obligatorio")
     private String nombre;
     private String apellido;
@@ -33,7 +33,7 @@ public class ClienteEntity {
 
     @OneToMany(mappedBy = "cliente" ,cascade = CascadeType.ALL,
             orphanRemoval = true)
-    private List<CompraEntity> compras = new ArrayList<>();
+    private List<CompraEntity> compras ;
 
     public ClienteEntity(Long id,String nombre, String apellido, String email, String telefono, String direccion) {
        this.id= id;
