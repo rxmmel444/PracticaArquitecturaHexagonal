@@ -1,10 +1,9 @@
 package mx.com.tiendaonline.cliente.model.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class ClienteDTO {
@@ -15,4 +14,6 @@ public class ClienteDTO {
     private String email;
     private String telefono;
     private String direccion;
+
+
 }

@@ -6,7 +6,9 @@ import mx.com.tiendaonline.compraproducto.port.repository.CompraRespository;
 import mx.com.tiendaonline.compraproducto.query.CompraAllHandler;
 import mx.com.tiendaonline.compraproducto.service.CompraAllService;
 import mx.com.tiendaonline.compraproducto.service.CompraCreateService;
+import mx.com.tiendaonline.compraproducto.service.StockService;
 import mx.com.tiendaonline.producto.port.dao.ProductoDAO;
+import mx.com.tiendaonline.producto.port.repository.ProductoRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -19,8 +21,12 @@ public class CompraBean {
 }
 
 @Bean
-    CompraCreateService createServiceCompra(CompraRespository respository, ClienteDAO dao, ProductoDAO productoDAO){
-    return new CompraCreateService(dao,productoDAO,respository);
+    CompraCreateService createServiceCompra(CompraRespository respository, ClienteDAO dao, ProductoDAO productoDAO, StockService stockService){
+    return new CompraCreateService(dao,productoDAO,respository,stockService);
+}
+@Bean
+    StockService stockService(ProductoDAO productoDAO, ProductoRepository repository){
+    return new StockService(productoDAO,repository);
 }
 
 }

@@ -7,12 +7,12 @@ import mx.com.tiendaonline.compraproducto.port.repository.CompraRespository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class CompraRepositoryImpl implements CompraRespository {
+public class comprarepositoryImpl implements CompraRespository {
 
     private final CompraJpaAdapterRespository respository;
     private final CompraDboMapper compraDboMapper;
 
-    public CompraRepositoryImpl(CompraJpaAdapterRespository respository, CompraDboMapper compraDboMapper) {
+    public comprarepositoryImpl(CompraJpaAdapterRespository respository, CompraDboMapper compraDboMapper) {
         this.respository = respository;
         this.compraDboMapper = compraDboMapper;
     }

@@ -27,7 +27,7 @@ public class CompraCreateService {
     private final ClienteDAO clienteDAO;
     private final ProductoDAO productoDAO;
     private final CompraRespository compraRespository;
-
+private final StockService stockService;
 
     @Transactional
     public Compra crearCompra(CompraCreateCommand command) {
@@ -51,7 +51,8 @@ public class CompraCreateService {
             }
 
             /*actualizamos el stock */
-            productoDAO.actualziarStock(producto.getId(), producto.getStock() - productosCompra.getCantidad());
+stockService.descontarStock(productosCompra.getProductoId(), productosCompra.getCantidad());
+
 
             CompraProducto detalle = new CompraProducto();
             detalle.setProductoId(producto.getId());
@@ -60,8 +61,7 @@ public class CompraCreateService {
             detalle.setCantidad(productosCompra.getCantidad());
 
             compraDetalle.add(detalle);
-            BigDecimal subtotal = producto.getPrecio().multiply(BigDecimal.valueOf(productosCompra.getCantidad()));
-            precioTotal = precioTotal.add(subtotal);
+            precioTotal = precioTotal.add(producto.getPrecio().multiply(BigDecimal.valueOf(productosCompra.getCantidad())));
         }
         Compra compra = new Compra();
         compra.setId(cliente.getId());

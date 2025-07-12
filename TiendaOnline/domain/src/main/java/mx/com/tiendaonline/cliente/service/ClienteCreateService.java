@@ -19,7 +19,7 @@ public class ClienteCreateService {
 
         if(dao.existByEmail(createCommand.getEmail())){
 
-            throw new ClienteException("el email ya eexite mi bro");
+            throw new ClienteException("el email ya existe mi bro");
         }
         var cliente = new Cliente(
                createCommand.getId(),
@@ -29,7 +29,7 @@ public class ClienteCreateService {
                createCommand.getTelefono(),
                createCommand.getDireccion()
        );
-      // event.clienteCreadoEvent(cliente);
+       event.clienteCreadoEvent(cliente);
        return crepository.create(cliente);
     }
 }

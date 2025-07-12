@@ -1,6 +1,7 @@
 package mx.com.tiendaonline.producto.adapter.jpa.dao;
 
 import lombok.AllArgsConstructor;
+import mx.com.tiendaonline.producto.adapter.entity.ProductoEntity;
 import mx.com.tiendaonline.producto.adapter.jpa.ProductoJpaAdapterRepository;
 import mx.com.tiendaonline.producto.adapter.mapper.ProductoDboMapper;
 import mx.com.tiendaonline.producto.model.entity.Producto;
@@ -30,8 +31,9 @@ public class ProductoDAOImpl implements ProductoDAO {
 
     @Override
     public Producto getById(Long id) {
-        var cliente = adapterRepository.findById(id);
-        return productoDboMapper.toDomain(cliente.get());
+        ProductoEntity entity = adapterRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Producto con ID " + id + " no encontrado"));
+        return productoDboMapper.toDomain(entity);
     }
 
     @Override

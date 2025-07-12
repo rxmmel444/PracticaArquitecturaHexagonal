@@ -1,0 +1,17 @@
+# Archivos generados
+/target/
+*.class
+
+# Archivos Eclipse
+.settings/
+.project
+.classpath
+
+# Carpetas que no quieres rastrear
+/.idea/
+/.metadata/
+# Archivos externos no deseados
+archetype-modular/
+MTiendaOnline/
+PullConexion/
+TIENDAONLONIE2/

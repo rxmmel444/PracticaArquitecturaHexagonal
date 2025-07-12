@@ -13,10 +13,7 @@ import java.util.List;
 public interface CompraProductoMapper {
 
     CompraProductoDTO toCompraDto(CompraProducto producto);
-
     CompraProducto toDomain(CompraProductoDTO compraProductoDTO);
-
-
 
     List<CompraProductoDTO> toDtoList(List<CompraProducto>productos);
     List<CompraProducto>toDomainList(List<CompraProductoDTO> productos);

@@ -1,0 +1,120 @@
+Index: application/target/generated-sources/annotations/mx/com/tiendaonline/producto/mapper/ProductoDtoMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package mx.com.tiendaonline.producto.mapper;\r\n\r\nimport javax.annotation.processing.Generated;\r\nimport mx.com.tiendaonline.producto.command.ProductoCreateCommand;\r\nimport mx.com.tiendaonline.producto.dto.ProductoDTO;\r\nimport mx.com.tiendaonline.producto.model.entity.Producto;\r\nimport org.springframework.stereotype.Component;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n<<<<<<< HEAD\r\n    date = \"2025-07-08T14:12:15-0600\",\r\n=======\r\n    date = \"2025-07-09T06:20:20-0600\",\r\n>>>>>>> 29cfecf (Cambios para la otra rama)\r\n    comments = \"version: 1.4.2.Final, compiler: javac, environment: Java 17.0.12 (Oracle Corporation)\"\r\n)\r\n@Component\r\npublic class ProductoDtoMapperImpl implements ProductoDtoMapper {\r\n\r\n    @Override\r\n    public ProductoDTO domainToDto(Producto domain) {\r\n        if ( domain == null ) {\r\n            return null;\r\n        }\r\n\r\n        ProductoDTO productoDTO = new ProductoDTO();\r\n\r\n        productoDTO.setId( domain.getId() );\r\n        productoDTO.setNombre( domain.getNombre() );\r\n        productoDTO.setPrecio( domain.getPrecio() );\r\n        productoDTO.setStock( domain.getStock() );\r\n\r\n        return productoDTO;\r\n    }\r\n\r\n    @Override\r\n    public ProductoCreateCommand toCommand(ProductoDTO productoDTO) {\r\n        if ( productoDTO == null ) {\r\n            return null;\r\n        }\r\n\r\n        ProductoCreateCommand productoCreateCommand = new ProductoCreateCommand();\r\n\r\n        productoCreateCommand.setId( productoDTO.getId() );\r\n        productoCreateCommand.setNombre( productoDTO.getNombre() );\r\n        productoCreateCommand.setPrecio( productoDTO.getPrecio() );\r\n        productoCreateCommand.setStock( productoDTO.getStock() );\r\n\r\n        return productoCreateCommand;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/application/target/generated-sources/annotations/mx/com/tiendaonline/producto/mapper/ProductoDtoMapperImpl.java b/application/target/generated-sources/annotations/mx/com/tiendaonline/producto/mapper/ProductoDtoMapperImpl.java
+--- a/application/target/generated-sources/annotations/mx/com/tiendaonline/producto/mapper/ProductoDtoMapperImpl.java	(revision da0e7c2ea4ffbcc51ebf64dd14ef6183cc1728d6)
++++ b/application/target/generated-sources/annotations/mx/com/tiendaonline/producto/mapper/ProductoDtoMapperImpl.java	(date 1752081462106)
+@@ -8,11 +8,7 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-<<<<<<< HEAD
+-    date = "2025-07-08T14:12:15-0600",
+-=======
+-    date = "2025-07-09T06:20:20-0600",
+->>>>>>> 29cfecf (Cambios para la otra rama)
++    date = "2025-07-09T11:17:42-0600",
+     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.12 (Oracle Corporation)"
+ )
+ @Component
+Index: application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>C:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\command\\ClienteCreateCommand.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\command\\ClienteCreateHandler.java\r\n<<<<<<< HEAD\r\n=======\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\command\\ClienteDeleteHandler.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\command\\ClienteUpdateCommand.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\command\\ClienteUpdateHandler.java\r\n>>>>>>> 29cfecf (Cambios para la otra rama)\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\dto\\ClienteDTO.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\mapper\\ClienteDtoMapper.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\query\\ClienteAllHandler.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\service\\ClienteCreateService.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\message\\command\\ClienteMessageCreateHandler.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\command\\ProductoCreateCommand.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\command\\ProductoCreateHandler.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\dto\\ProductoDTO.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\mapper\\ProductoDtoMapper.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\query\\ProductoAllHandler.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\application\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\service\\ProductoCreateService.java\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst b/application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+--- a/application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(revision da0e7c2ea4ffbcc51ebf64dd14ef6183cc1728d6)
++++ b/application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(date 1752081460619)
+@@ -1,15 +1,22 @@
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\command\ClienteCreateCommand.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\command\ClienteCreateHandler.java
+-<<<<<<< HEAD
+-=======
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\command\ClienteDeleteHandler.java
+-C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\command\ClienteUpdateCommand.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\command\ClienteUpdateHandler.java
+->>>>>>> 29cfecf (Cambios para la otra rama)
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\dto\ClienteDTO.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\mapper\ClienteDtoMapper.java
+-C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\query\ClienteAllHandler.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\query\ClienteAllHandlerQuery.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\query\ClienteByIdHandler.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\service\ClienteAllService.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\service\ClienteByIdService.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\service\ClienteCreateService.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\service\ClienteDeleteService.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\cliente\service\ClienteUpdateService.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\compraproducto\commnad\CompraCrateHandler.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\compraproducto\commnad\CompraCreateCommand.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\compraproducto\dto\CompraDTO.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\compraproducto\mapper\CompraDtoMapper.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\compraproducto\query\CompraAllHander.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\compraproducto\service\CompraCreateService.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\message\command\ClienteMessageCreateHandler.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\producto\command\ProductoCreateCommand.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\application\src\main\java\mx\com\tiendaonline\producto\command\ProductoCreateHandler.java
+Index: domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>C:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\model\\entity\\Cliente.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteApellido.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteDireccion.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteEmail.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteId.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteNombre.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteTelefono.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\port\\dao\\ClienteDAO.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\port\\event\\ClienteEventCreate.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\cliente\\port\\repository\\ClienteRepository.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\message\\model\\dto\\command\\ClienteMessageCrateCommand.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\message\\port\\repository\\ClienteEventRepository.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\message\\service\\ClienteMessageService.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\model\\entity\\Producto.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\model\\entity\\ProductoId.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\model\\entity\\ProductoNombre.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\model\\entity\\ProductoPrecio.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\model\\entity\\ProductoStock.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\port\\dao\\ProductoDAO.java\r\nC:\\Users\\SoporteTI\\Documents\\WORKSPACE-MSC\\EjerciciosSantander\\TiendaOnline\\domain\\src\\main\\java\\mx\\com\\tiendaonline\\producto\\port\\repository\\ProductoRepository.java\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst b/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+--- a/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(revision da0e7c2ea4ffbcc51ebf64dd14ef6183cc1728d6)
++++ b/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(date 1752081458781)
+@@ -5,6 +5,7 @@
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteId.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteNombre.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\ClienteTelefono.java
++C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\model\entity\CompraProducto.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\dao\ClienteDAO.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\event\ClienteEventCreate.java
+ C:\Users\SoporteTI\Documents\WORKSPACE-MSC\EjerciciosSantander\TiendaOnline\domain\src\main\java\mx\com\tiendaonline\cliente\port\repository\ClienteRepository.java
+Index: application/target/generated-sources/annotations/mx/com/tiendaonline/cliente/mapper/ClienteDtoMapperImpl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package mx.com.tiendaonline.cliente.mapper;\r\n\r\nimport javax.annotation.processing.Generated;\r\nimport mx.com.tiendaonline.cliente.command.ClienteCreateCommand;\r\nimport mx.com.tiendaonline.cliente.dto.ClienteDTO;\r\nimport mx.com.tiendaonline.cliente.model.entity.Cliente;\r\nimport org.springframework.stereotype.Component;\r\n\r\n@Generated(\r\n    value = \"org.mapstruct.ap.MappingProcessor\",\r\n<<<<<<< HEAD\r\n    date = \"2025-07-08T14:12:15-0600\",\r\n=======\r\n    date = \"2025-07-09T06:20:20-0600\",\r\n>>>>>>> 29cfecf (Cambios para la otra rama)\r\n    comments = \"version: 1.4.2.Final, compiler: javac, environment: Java 17.0.12 (Oracle Corporation)\"\r\n)\r\n@Component\r\npublic class ClienteDtoMapperImpl implements ClienteDtoMapper {\r\n\r\n    @Override\r\n    public ClienteDTO domainToDto(Cliente domain) {\r\n        if ( domain == null ) {\r\n            return null;\r\n        }\r\n\r\n        ClienteDTO clienteDTO = new ClienteDTO();\r\n\r\n        clienteDTO.setId( domain.getId() );\r\n        clienteDTO.setNombre( domain.getNombre() );\r\n        clienteDTO.setApellido( domain.getApellido() );\r\n        clienteDTO.setEmail( domain.getEmail() );\r\n        clienteDTO.setTelefono( domain.getTelefono() );\r\n        clienteDTO.setDireccion( domain.getDireccion() );\r\n\r\n        return clienteDTO;\r\n    }\r\n\r\n    @Override\r\n    public ClienteCreateCommand toCommand(ClienteDTO clienteDTO) {\r\n        if ( clienteDTO == null ) {\r\n            return null;\r\n        }\r\n\r\n        ClienteCreateCommand clienteCreateCommand = new ClienteCreateCommand();\r\n\r\n        clienteCreateCommand.setId( clienteDTO.getId() );\r\n        clienteCreateCommand.setNombre( clienteDTO.getNombre() );\r\n        clienteCreateCommand.setApellido( clienteDTO.getApellido() );\r\n        clienteCreateCommand.setEmail( clienteDTO.getEmail() );\r\n        clienteCreateCommand.setTelefono( clienteDTO.getTelefono() );\r\n        clienteCreateCommand.setDireccion( clienteDTO.getDireccion() );\r\n\r\n        return clienteCreateCommand;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/application/target/generated-sources/annotations/mx/com/tiendaonline/cliente/mapper/ClienteDtoMapperImpl.java b/application/target/generated-sources/annotations/mx/com/tiendaonline/cliente/mapper/ClienteDtoMapperImpl.java
+--- a/application/target/generated-sources/annotations/mx/com/tiendaonline/cliente/mapper/ClienteDtoMapperImpl.java	(revision da0e7c2ea4ffbcc51ebf64dd14ef6183cc1728d6)
++++ b/application/target/generated-sources/annotations/mx/com/tiendaonline/cliente/mapper/ClienteDtoMapperImpl.java	(date 1752081462077)
+@@ -8,11 +8,7 @@
+ 
+ @Generated(
+     value = "org.mapstruct.ap.MappingProcessor",
+-<<<<<<< HEAD
+-    date = "2025-07-08T14:12:15-0600",
+-=======
+-    date = "2025-07-09T06:20:20-0600",
+->>>>>>> 29cfecf (Cambios para la otra rama)
++    date = "2025-07-09T11:17:41-0600",
+     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 17.0.12 (Oracle Corporation)"
+ )
+ @Component
+Index: domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>mx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteId.class\r\nmx\\com\\tiendaonline\\producto\\model\\entity\\ProductoNombre.class\r\nmx\\com\\tiendaonline\\producto\\model\\entity\\ProductoPrecio.class\r\nmx\\com\\tiendaonline\\message\\model\\dto\\command\\ClienteMessageCrateCommand.class\r\nmx\\com\\tiendaonline\\cliente\\port\\event\\ClienteEventCreate.class\r\nmx\\com\\tiendaonline\\cliente\\model\\entity\\Cliente.class\r\nmx\\com\\tiendaonline\\cliente\\port\\dao\\ClienteDAO.class\r\nmx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteDireccion.class\r\nmx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteApellido.class\r\nmx\\com\\tiendaonline\\cliente\\port\\repository\\ClienteRepository.class\r\nmx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteEmail.class\r\nmx\\com\\tiendaonline\\producto\\model\\entity\\ProductoStock.class\r\nmx\\com\\tiendaonline\\producto\\port\\dao\\ProductoDAO.class\r\nmx\\com\\tiendaonline\\message\\service\\ClienteMessageService.class\r\nmx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteNombre.class\r\nmx\\com\\tiendaonline\\producto\\model\\entity\\ProductoId.class\r\nmx\\com\\tiendaonline\\producto\\port\\repository\\ProductoRepository.class\r\nmx\\com\\tiendaonline\\cliente\\model\\entity\\ClienteTelefono.class\r\nmx\\com\\tiendaonline\\producto\\model\\entity\\Producto.class\r\nmx\\com\\tiendaonline\\message\\port\\repository\\ClienteEventRepository.class\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst b/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+--- a/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(revision da0e7c2ea4ffbcc51ebf64dd14ef6183cc1728d6)
++++ b/domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst	(date 1752081459801)
+@@ -3,6 +3,7 @@
+ mx\com\tiendaonline\producto\model\entity\ProductoPrecio.class
+ mx\com\tiendaonline\message\model\dto\command\ClienteMessageCrateCommand.class
+ mx\com\tiendaonline\cliente\port\event\ClienteEventCreate.class
++mx\com\tiendaonline\cliente\model\entity\CompraProducto.class
+ mx\com\tiendaonline\cliente\model\entity\Cliente.class
+ mx\com\tiendaonline\cliente\port\dao\ClienteDAO.class
+ mx\com\tiendaonline\cliente\model\entity\ClienteDireccion.class
