@@ -3,7 +3,7 @@ package mx.com.tiendaonline.compraproducto.model.dto.command;
 import lombok.*;
 
 import java.util.List;
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter

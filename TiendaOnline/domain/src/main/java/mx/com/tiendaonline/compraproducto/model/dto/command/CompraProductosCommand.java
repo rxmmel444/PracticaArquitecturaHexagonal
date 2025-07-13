@@ -2,7 +2,7 @@ package mx.com.tiendaonline.compraproducto.model.dto.command;
 
 import lombok.*;
 
-@Data
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter

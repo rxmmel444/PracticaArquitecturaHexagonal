@@ -1,13 +1,10 @@
-
 package mx.com.tiendaonline.compraproducto.service;
 
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.cliente.port.dao.ClienteDAO;
-import mx.com.tiendaonline.compraproducto.model.dto.CompraProductoDTO;
 import mx.com.tiendaonline.compraproducto.model.dto.command.CompraCreateCommand;
-import mx.com.tiendaonline.compraproducto.model.dto.command.CompraProductoCommand;
 import mx.com.tiendaonline.compraproducto.model.dto.command.CompraProductosCommand;
 import mx.com.tiendaonline.compraproducto.model.entity.Compra;
 import mx.com.tiendaonline.compraproducto.model.entity.CompraProducto;
