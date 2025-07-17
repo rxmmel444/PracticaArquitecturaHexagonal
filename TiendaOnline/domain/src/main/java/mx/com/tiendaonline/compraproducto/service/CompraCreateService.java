@@ -19,8 +19,8 @@ import java.util.List;
 public class CompraCreateService {
 
     private final CompraRespository compraRespository;
-private final ValidarCompraService validarCompra;
-private final CompraProductoService compraProductoService;
+    private final ValidarCompraService validarCompra;
+    private final CompraProductoService compraProductoService;
     private final StockService stockService;
 
     @Transactional
@@ -32,6 +32,7 @@ private final CompraProductoService compraProductoService;
 
       for(CompraProductosCommand cpcommand : command.getProductos()){
       Producto producto = validarCompra.validarProductoStock(cpcommand.getProductoId(), cpcommand.getCantidad());
+
       stockService.descontarStock(producto.getId(), cpcommand.getCantidad());
 
       CompraProducto productoDetalle = compraProductoService.crearDetalleCompra(producto,cpcommand.getCantidad());

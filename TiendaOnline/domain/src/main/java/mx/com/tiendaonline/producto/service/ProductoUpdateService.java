@@ -3,6 +3,7 @@ package mx.com.tiendaonline.producto.service;
 import lombok.RequiredArgsConstructor;
 import mx.com.tiendaonline.producto.model.dto.command.ProductoUpdateCommand;
 import mx.com.tiendaonline.producto.model.entity.Producto;
+import mx.com.tiendaonline.producto.model.exception.ProductoException;
 import mx.com.tiendaonline.producto.port.dao.ProductoDAO;
 import mx.com.tiendaonline.producto.port.repository.ProductoRepository;
 
@@ -14,6 +15,10 @@ public class ProductoUpdateService {
 
     public Producto ejecutar(Long id, ProductoUpdateCommand command){
         var productoActual = productoDAO.getById(id);
+        if(productoActual == null){
+            throw new ProductoException("El producto buscado no existe");
+        }
+
         var productoUpdate = new Producto(
                 productoActual.getId(),
                 command.getNombre(),

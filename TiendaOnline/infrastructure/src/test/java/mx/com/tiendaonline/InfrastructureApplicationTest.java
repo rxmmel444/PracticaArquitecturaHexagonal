@@ -57,8 +57,8 @@ public class InfrastructureApplicationTest {
     verify(clienteHandler).crear(command);
 }
 
-@Test
-void eliminarCliente (){
+    @Test
+    void eliminarCliente (){
 
     Long id = 1L;
     Cliente cliente = new Cliente(id,"Rommel","Valdiviezo","rommelkf@gmail.com","551029384","calle mara");
@@ -71,7 +71,7 @@ void eliminarCliente (){
 
     verify(clienteDAO).getById(id);
     verify(clienteRespository).delete(id);
-}
+        }
     @Test
     void crearProductoDTO(){
         ProductoCreateCommand command = new ProductoCreateCommand();
@@ -82,6 +82,6 @@ void eliminarCliente (){
         Assertions.assertEquals(dto,resultado);
         verify(productoCreateHandler).crear(command);
 
-    }
+     }
 
 }

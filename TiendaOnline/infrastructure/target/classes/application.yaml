@@ -44,10 +44,6 @@ kafka:
       spring.json.value.default.type: mx.com.tiendaonline.cliente.model.dto.ClienteDTO
 
 
-  logging:
-    level:
-      root=DEBUG:
-
 
 
 

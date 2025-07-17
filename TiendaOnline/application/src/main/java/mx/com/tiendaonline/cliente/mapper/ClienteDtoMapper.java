@@ -10,7 +10,6 @@ import org.mapstruct.Mapping;
 import org.springframework.stereotype.Component;
 
 @Mapper(componentModel = "spring")
-@Component
 public interface ClienteDtoMapper {
 
 

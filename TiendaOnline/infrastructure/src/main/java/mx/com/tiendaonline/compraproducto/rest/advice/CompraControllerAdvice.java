@@ -16,10 +16,9 @@ public class CompraControllerAdvice {
     }
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> errorServicio(Exception ex) {
-        String mensajeError = "⚠️ Error interno del servidor\n" +
-                "🧩 Tipo de excepción: " + ex.getClass().getSimpleName() + "\n" +
-                "📄 Mensaje: " + ex.getMessage() + "\n" +
-                "💡 Recomendación: Revisa los logs del backend para más detalles.";
+        String mensajeError = "Error interno del servidor" +
+                " Tipo de excepción: " + ex.getClass().getSimpleName()+
+                " Mensaje: " + ex.getMessage() ;
 
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                 .body(mensajeError);

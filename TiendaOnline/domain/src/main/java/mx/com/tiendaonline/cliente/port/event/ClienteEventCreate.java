@@ -7,4 +7,3 @@ public interface ClienteEventCreate {
     void clienteCreadoEvent(Cliente cliente);
 }
 
-//puerto de salida
