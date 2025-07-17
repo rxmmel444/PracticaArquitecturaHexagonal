@@ -18,8 +18,8 @@ public class CompraProductoEntity {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 private Long id;
+    private Long productoId;
 private String nombre;
-private Long productoId;
 private Integer cantidad;
 private BigDecimal precioUnitario;
 @ManyToOne

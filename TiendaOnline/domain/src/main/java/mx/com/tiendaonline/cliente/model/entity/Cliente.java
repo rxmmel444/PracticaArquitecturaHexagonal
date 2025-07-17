@@ -38,7 +38,7 @@ public class Cliente {
     }
 
     public Long getId() {
-        return id.clienteId;
+        return id.getClienteId();
     }
 
     public String getNombre() {

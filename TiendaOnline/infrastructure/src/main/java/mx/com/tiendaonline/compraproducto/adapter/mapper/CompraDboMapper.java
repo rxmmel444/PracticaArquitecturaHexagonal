@@ -12,6 +12,7 @@ import mx.com.tiendaonline.compraproducto.model.entity.*;
 import mx.com.tiendaonline.producto.adapter.entity.ProductoEntity;
 import mx.com.tiendaonline.producto.adapter.mapper.ProductoDboMapper;
 import mx.com.tiendaonline.producto.model.entity.Producto;
+import mx.com.tiendaonline.producto.model.entity.ProductoId;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 
@@ -25,68 +26,50 @@ public class CompraDboMapper {
 
     private final ClienteDboMapper clienteDboMapper;
     private final ProductoDboMapper productoDboMapper;
-    private final ClienteDtoMapper mapper;
 
-    public CompraDboMapper(ClienteDboMapper clienteDboMapper, ProductoDboMapper productoDboMapper, ClienteDtoMapper mapper) {
+    public CompraDboMapper(ClienteDboMapper clienteDboMapper, ProductoDboMapper productoDboMapper) {
         this.clienteDboMapper = clienteDboMapper;
         this.productoDboMapper = productoDboMapper;
-        this.mapper = mapper;
-    }
-
-
-    public CompraEntity toDbo(Compra domain){
-        if(domain==null){
-
-            return null;
-        }
-
-        List<CompraProductoEntity> productoEntities = domain.getProductos().stream()
-                .map(producto ->
-                        new CompraProductoEntity(
-                                null,
-                                producto.getNombre(),
-                                producto.getProductoId(),
-                                producto.getCantidad(),
-                                producto.getPrecioUnitario(),
-                                null
-                        )).collect(Collectors.toList());
-
-
-        CompraEntity entity = new CompraEntity();
-      entity.setId(domain.getId());
-      entity.setPrecioTotal(domain.getPrecioTotal());
-      entity.setCliente(clienteDboMapper.toEntity(domain.getCliente()));
-      entity.setProductos(productoEntities);
-
-      //asignamos compra a cada producto
-      productoEntities.forEach(productos -> productos.setCompra(entity));
-        return entity;
-
 
     }
 
 
+    public CompraEntity toDbo(Compra domain) {
+        CompraEntity e = new CompraEntity();
+        e.setId(domain.getId().getId());
+        e.setPrecioTotal(domain.getPrecioTotal().getPrecioTotal());
+        e.setFechaCompra(domain.getFechaCompra().getFechaCompra());
+        e.setCliente(clienteDboMapper.toEntity(domain.getCliente()));
+        var prod = domain.getProductos().getProductos().stream()
+                .map(p -> {
+                    var pe = new CompraProductoEntity();
+                    pe.setProductoId(p.getProductoId().getId());
+                    pe.setNombre(p.getNombre().getNombre());
+                    pe.setCantidad(p.getCantidad().getCantidad());
+                    pe.setPrecioUnitario(p.getPrecioUnitario().getPrecioUnitario());
+                    pe.setCompra(e);
+                    return pe;
+                }).toList();
+        e.setProductos(prod);
+        return e;
+    }
 
-    public Compra toDomain(CompraEntity entity) {
-        if (entity == null) {
-            throw  new IllegalStateException("Por el momento la compra sin cliente asignado ");
-        }
-
-        List<CompraProducto> productos = entity.getProductos().stream()
-                .map(productoEntity -> new CompraProducto(
-
-                        productoEntity.getProductoId(),
-                        productoEntity.getNombre(),
-                        productoEntity.getPrecioUnitario(),
-                        productoEntity.getCantidad()
-                )).collect(Collectors.toList());
+    public Compra toDomain(CompraEntity e) {
+        Cliente cl = clienteDboMapper.toDomain(e.getCliente());
+        List<CompraProducto> prod = e.getProductos().stream()
+                .map(pe -> new CompraProducto(
+                        new CProductoId(pe.getProductoId()),
+                        new CProductoNombre(pe.getNombre()),
+                        new CProductoCantidad(pe.getCantidad()),
+                        new CProductoPrecio(pe.getPrecioUnitario())
+                )).toList();
 
         return new Compra(
-                entity.getId(),
-                entity.getPrecioTotal(),
-                entity.getFechaCompra(),
-                clienteDboMapper.toDomain(entity.getCliente()),
-                productos
-        );
+                        new CompraId(e.getId()),
+                        cl,
+                new CompraPrecioTotal(e.getPrecioTotal()),
+                new CompraFechaCompra(e.getFechaCompra()),
+                prod
+                );
     }
 }

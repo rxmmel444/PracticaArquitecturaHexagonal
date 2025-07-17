@@ -13,7 +13,7 @@ public class ClienteEmail
 
     public ClienteEmail(String emaill){
 
-        if(emaill.isBlank() || emaill == null) {
+        if( emaill == null || emaill.isBlank()) {
             throw new ClienteException("EL email es obligatorio ");
         }
         this.email=emaill;

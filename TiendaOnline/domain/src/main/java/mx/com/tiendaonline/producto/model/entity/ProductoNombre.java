@@ -7,7 +7,7 @@ import mx.com.tiendaonline.cliente.model.exception.ClienteException;
 
 
 @NoArgsConstructor
-@Getter
+
 public class ProductoNombre {
 private String nombre;
     public ProductoNombre(String nombre) {
@@ -16,4 +16,7 @@ private String nombre;
         this.nombre =nombre;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
 }

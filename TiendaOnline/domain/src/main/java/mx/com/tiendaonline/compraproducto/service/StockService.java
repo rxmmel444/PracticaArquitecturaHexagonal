@@ -10,17 +10,18 @@ public class StockService {
     private final ProductoDAO productoDAO;
     private  final ProductoRepository repository;
 
-    public void descontarStock(Long productoId,Integer cantidad){
-        Producto producto= productoDAO.getById(productoId);
+    public Producto descontarStock(Long productoId,Integer cantidad){
+        var producto= productoDAO.getById(productoId);
         if (producto == null){
             throw new IllegalArgumentException("producto no disponible por ahora");
         }
-        if(producto.getStock() < cantidad){
-            throw new IllegalStateException("no hay stock suficiente por el momento");
+  int actualizarStock = producto.getStock() - cantidad;
+        if (actualizarStock < 0){
+            throw new IllegalArgumentException("Stock insuficiente");
+
         }
 
-        productoDAO.actualziarStock(productoId,producto.getStock() - cantidad);
-        repository.create(producto);
+        return    repository.update(productoId,producto);
 
     }
 

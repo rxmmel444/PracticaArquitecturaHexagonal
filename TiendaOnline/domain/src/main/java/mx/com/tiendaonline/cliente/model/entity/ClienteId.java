@@ -5,14 +5,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 @Getter
-
 @NoArgsConstructor
 
 public class ClienteId {
 
-     Long clienteId;
+     private Long id;
 
-    public ClienteId(Long clienteId) {
-        this.clienteId = clienteId;
+    public ClienteId(Long id) {
+        this.id = id;
+    }
+    public  Long getClienteId(){
+        return id;
     }
 }

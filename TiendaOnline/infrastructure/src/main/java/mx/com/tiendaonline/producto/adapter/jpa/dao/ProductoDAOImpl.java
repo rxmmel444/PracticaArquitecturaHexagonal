@@ -1,5 +1,6 @@
 package mx.com.tiendaonline.producto.adapter.jpa.dao;
 
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import mx.com.tiendaonline.producto.adapter.entity.ProductoEntity;
 import mx.com.tiendaonline.producto.adapter.jpa.ProductoJpaAdapterRepository;
@@ -35,9 +36,12 @@ public class ProductoDAOImpl implements ProductoDAO {
                 .orElseThrow(() -> new RuntimeException("Producto con ID " + id + " no encontrado"));
         return productoDboMapper.toDomain(entity);
     }
-
+@Transactional
     @Override
     public void actualziarStock(Long id, Integer cantidad) {
-
+        ProductoEntity entity = adapterRepository.findById(id)
+                        .orElseThrow(()-> new RuntimeException("Producto no encontrado con Id " + id  ));
+        entity.setStock(cantidad);
+        adapterRepository.save(entity);
     }
 }

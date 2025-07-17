@@ -6,29 +6,41 @@ import lombok.*;
 import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.cliente.model.entity.ClienteId;
 import mx.com.tiendaonline.compraproducto.model.dto.CompraProductoDTO;
+import mx.com.tiendaonline.compraproducto.model.dto.command.CompraCreateCommand;
 
 
 import java.math.BigDecimal;
+import java.sql.Date;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 public class Compra {
 
-    private Long id;
+    private CompraId id;
     private Cliente cliente;
-    private BigDecimal precioTotal;
-    private LocalDateTime fechaCompra;
-    private List<CompraProducto> productos;
+    private CompraPrecioTotal precioTotal;
+    private CompraFechaCompra fechaCompra;
+    private CompraProductos productos;
 
-    public Compra(Long id, BigDecimal precioTotal, LocalDateTime fechaCompra, Cliente cliente, List<CompraProducto> productos) {
+
+
+    // Constructor VO completo
+    public Compra(CompraId id, Cliente cliente, CompraPrecioTotal precioTotal,
+                  CompraFechaCompra fechaCompra, List<CompraProducto> productos) {
         this.id = id;
+        this.cliente = cliente;
         this.precioTotal = precioTotal;
         this.fechaCompra = fechaCompra;
-        this.cliente = cliente;
-        this.productos = productos;
+        this.productos = new CompraProductos(productos);
     }
 
+
+
 }
+

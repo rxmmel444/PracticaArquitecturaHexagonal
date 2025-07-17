@@ -1,9 +1,6 @@
 package mx.com.tiendaonline.producto.model.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import lombok.*;
 import mx.com.tiendaonline.cliente.model.entity.*;
 
 import java.math.BigDecimal;
@@ -11,7 +8,8 @@ import java.math.BigDecimal;
 
 @NoArgsConstructor
 
-
+@Setter
+@Getter
 public class Producto {
     private ProductoId id;
     private ProductoNombre nombre;
@@ -26,8 +24,6 @@ public class Producto {
         this.stock = new ProductoStock(stock);
 
     }
-
-
 
     public Long getId() {
         return this.id.getId();
@@ -44,4 +40,6 @@ public class Producto {
     public String getNombre() {
         return this.nombre.getNombre();
     }
+
+
 }

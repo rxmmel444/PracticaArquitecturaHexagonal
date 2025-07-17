@@ -33,9 +33,6 @@ server:
 
 kafka:
   bootstrap-servers: localhost:9092
-  producer:
-    key.serializer: org.apache.kafka.common.serialization.StringSerializer
-    value.serializer: org.springframework.kafka.support.serializer.JsonSerializer
 
   consumer:
     group-id: my-consumer-group
@@ -44,4 +41,13 @@ kafka:
     value.deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
     properties:
       spring.json.trusted.packages: '*'
+      spring.json.value.default.type: mx.com.tiendaonline.cliente.model.dto.ClienteDTO
+
+
+  logging:
+    level:
+      root=DEBUG:
+
+
+
 
