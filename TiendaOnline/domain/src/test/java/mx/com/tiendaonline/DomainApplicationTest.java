@@ -30,20 +30,22 @@ public class DomainApplicationTest {
     @Mock
     private StockService stockService;
 
+
+    @Test
+    void crearClienteCorrectamente(){
+
+        Cliente cliente = new Cliente(1L,"Rommel","valdiviezo","rommelkd@gmail.com","5510595546","viento");
+        assertEquals("Rommel",cliente.getNombre());
+        assertEquals("valdiviezo",cliente.getApellido());
+
+    }
 @Test
 void pruebaNombeClienteNull(){
     assertThrows(ClienteException.class, ()->
             new Cliente(1L,null,"valdiviezo","rommel98@gmail.com","5510595546","viento"));
 }
 
-@Test
-    void crearClienteCorrectamente(){
 
-    Cliente cliente = new Cliente(1L,"Rommel","valdiviezo","rommelkd@gmail.com","5510595546","viento");
-    assertEquals("Rommel",cliente.getNombre());
-    assertEquals("valdiviezo",cliente.getApellido());
-
-}
 @Test
     void crearEmailValido(){
     ClienteEmail email = new ClienteEmail("rommel@example.com");

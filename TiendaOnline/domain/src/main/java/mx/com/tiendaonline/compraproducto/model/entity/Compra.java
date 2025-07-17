@@ -7,6 +7,7 @@ import mx.com.tiendaonline.cliente.model.entity.Cliente;
 import mx.com.tiendaonline.cliente.model.entity.ClienteId;
 import mx.com.tiendaonline.compraproducto.model.dto.CompraProductoDTO;
 import mx.com.tiendaonline.compraproducto.model.dto.command.CompraCreateCommand;
+import mx.com.tiendaonline.compraproducto.model.dto.command.CompraProductosCommand;
 
 
 import java.math.BigDecimal;
@@ -15,11 +16,10 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
-
-@Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
+@Setter
 public class Compra {
 
     private CompraId id;
@@ -42,5 +42,8 @@ public class Compra {
 
 
 
+
+    public Compra(long l, List<CompraProductosCommand> productos) {
+    }
 }
 

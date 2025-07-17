@@ -1,5 +1,6 @@
 package mx.com.tiendaonline.compraproducto.model.dto;
 import lombok.*;
+import mx.com.tiendaonline.compraproducto.model.dto.command.CompraProductosCommand;
 import mx.com.tiendaonline.compraproducto.model.entity.CompraFechaCompra;
 import mx.com.tiendaonline.compraproducto.model.entity.CompraId;
 import mx.com.tiendaonline.compraproducto.model.entity.CompraPrecioTotal;
@@ -9,10 +10,9 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Setter
-@Getter
 
 public class CompraDTO {
 
